@@ -1,0 +1,238 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea, fieldset, blockquote {
+	margin: 0; padding: 0; border: 0;
+}
+
+body {
+	background: url("../images/body_bg.gif") repeat scroll left top #171717;
+}
+
+/* Diagnostic border
+div {
+	border: solid 1px red;
+}
+*/
+
+#container {
+	background: transparent;
+}
+
+.tupperware {
+	background: #999999 url('') repeat;
+	color: #171717;
+	font-family: Georgia1, Georgia, serif;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.bottom_border {
+	background: #999999 url('../images/border.png') repeat-x bottom;
+}
+
+.padding_20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.tupperware p {
+	margin-left: 20px;
+}
+
+.tupperware img {
+	text-align: right;
+}
+
+#header {
+	color: #171717;
+	margin-bottom: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+h1 {
+	font-family: 'Neuton', arial, serif;
+}
+
+.small_head {
+	font-size: .5em;
+	float: right;
+}
+
+.large_head {
+	font-size: 1.6em;
+	text-shadow: 0px 2px 3px #E7C452;
+	word-spacing: -10px;
+}
+
+#header h1 {
+	line-height: 1.6em;
+	margin-bottom: .4em;
+}
+
+#header h2 {
+	font-family: 'Tinos', arial, serif;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	padding: 0px;
+	text-align: left;
+}
+
+#header p {
+	font-family: 'Tinos', arial, serif;
+	font-size: 1.1em;
+	line-height: 1.4em;
+	padding: 10px 0 15px 0;
+	text-align: left;
+}
+
+#header ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+#header ul {
+	margin-bottom: -10px;
+}
+
+#header li {
+	padding-left: 50px;
+}
+
+.header_blurb {
+	margin-left: 20px !important;
+}
+
+/*Curvaceousness*/
+
+.curved_bottom {
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+}
+
+.curved_triplets {
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;	
+}
+
+/* Portfolio Text Styling */
+.website {
+	padding-top: 5px;
+	font-variant: small-caps;
+	font-weight: bolder;
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+
+.website_link {
+	font-size: 1.2em;
+	width: 35%;
+	padding-top: 3px;
+	padding-left: 10px;
+}
+
+.website_bullet {
+	font-weight: bolder;
+	font-size: 1.2em;
+	padding-top: 10px;
+}
+
+.website_text {
+	font-size: 1em;
+	margin-left: 40px;
+}
+
+.website_text li {
+	list-style-type: none;
+}
+
+/* Resume Text Styling */
+
+.section_header {
+	font-size: 1.2em;
+	font-weight: bolder;
+	background: #E7C452;
+	padding: 5px;
+	margin-left: -10px;
+}
+
+.company_name {
+	font-style: italic;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.job_title {
+	font-size: 1em;
+	font-weight: bolder;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.line_items {
+	font-size: 1em;
+}
+
+ul.line_items {
+	padding-left: 60px;
+	padding-bottom: 10px;
+}
+
+#skills ul.line_items {
+	padding-top: 10px;
+}
+
+#experience ul.line_items {
+	padding-top: 10px;
+}
+
+ul > ul.line_items {
+	padding-left: 60px;
+	padding-bottom: 0px;
+}
+
+.line_items li {
+	padding-top: 5px;
+	padding-right: 60px;
+}
+
+.dates {
+	background: #E7C452;
+	padding: 5px;
+	position: absolute;
+	right: -10px;
+}
+
+.b {
+	font-weight: bolder;
+}
+
+/*Link styling*/
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+}      /* unvisited link */
+a:visited {
+	color: #cdcdcd;
+	text-decoration: none;	
+}  /* visited link */
+a:hover {
+	color: #E7C452;
+	text-decoration: none;
+}  /* mouse over link */
+a:active {
+	color: #cdcdcd;
+	text-decoration: none;	
+}  /* selected link */
