@@ -5,9 +5,13 @@
 // hold nothing except for imports of your partials
 ////////////////////////
 
-@import 'normalize';
-@import 'foldy';
-@import 'variables';
-@import 'mixins-extends';
-@import 'typography';
-@import 'design';
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins-extends';
+@import 'base/typography';
+@import 'base/foldy';
+
+@import 'design/page';
+@import 'design/header';
+@import 'design/content';
+@import 'design/footer';
