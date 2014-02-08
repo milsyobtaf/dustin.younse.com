@@ -1,0 +1,12 @@
+////////////////////////
+// Style File
+//
+// This file gets turned into style.css. This file should really
+// hold nothing except for imports of your partials
+////////////////////////
+
+@import 'normalize';
+@import 'foldy';
+@import 'variables';
+@import 'mixins-extends';
+@import 'design';
