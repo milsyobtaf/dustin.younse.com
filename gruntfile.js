@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                 style: 'compressed'
               },
               files: {
-                'css/style.css': 'sass/style.scss'
+                'css/style.min.css': 'sass/style.scss'
               },
             },
             dev: {
@@ -62,17 +62,11 @@ module.exports = function (grunt) {
             // prefix the specified file
             single_file: {
               options: {
+                diff: true
                 // Target-specific options go here.
               },
               src: 'css/style.css',
               dest: 'css/style.css'
-            },
-            diff: {
-                options: {
-                    diff: true
-                },
-                src: 'css/style.css',
-                dest: 'css/style.css' // -> dest/css/file.css, dest/css/file.css.patch
             },
           },
 
@@ -113,16 +107,18 @@ module.exports = function (grunt) {
             options : {
               livereload: true
             },
-            css: {
-              files: ['sass/style.scss'],
-              tasks: ['sass:dev']
+            sass: {
+              files: ['sass/**/*.scss'],
+              tasks: ['sass:dev', 'autoprefixer']
             },
           },
 
     });
 
     // CSS Task
-    grunt.registerTask('css', ['sass:dev', 'autoprefixer', 'watch']);
+    grunt.registerTask('css', ['sass:dev', 'autoprefixer']);
+
+    // grunt.registerTask('css-prod', ['sass:dist', 'autoprefixer'/*, 'watch'*/]);
 
     // Release Task
     // grunt.registerTask('release', ['sass:dist', 'imagemin']);
