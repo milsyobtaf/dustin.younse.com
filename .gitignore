@@ -23,7 +23,7 @@ node_modules
 # Sublime Ignores
 *.sublime-workspace
 
-# OSX Ignors
+# OSX Ignores
 .DS_Store
 .AppleDouble
 .LSOverride
