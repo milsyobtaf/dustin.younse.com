@@ -1,6 +1,7 @@
 {
   "name": "dustin-younse-com",
   "version": "0.2.0",
+  "author": "Dustin Younse",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-sass": "~0.7.2",
