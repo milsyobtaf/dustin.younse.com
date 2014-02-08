@@ -67,7 +67,6 @@ module.exports = function (grunt) {
               src: 'css/style.css',
               dest: 'css/style.css'
             },
-
             diff: {
                 options: {
                     diff: true
