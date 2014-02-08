@@ -970,3 +970,10 @@ body {
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
+
+body {
+  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
