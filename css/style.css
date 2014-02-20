@@ -632,6 +632,16 @@ footer .about li.stateface:before {
   height: 2px;
   border: 0;
 }
+@media (min-width: 740px) {
+  .resume #experience .job-details {
+    position: relative;
+  }
+  .resume #experience .job-duration {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 
 .school-name,
 .degree-name,
