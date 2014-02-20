@@ -85,7 +85,7 @@ header {
 // Footer
 footer {
   background: $snes-gray-75;
-  color: lighten($snes-purple-light, 10%);
+  color: lighten($snes-purple-light, 5%);
   border-top: .5em solid darken($snes-purple-dark, 10%);
   padding: 0.5em 0;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
@@ -105,7 +105,6 @@ footer {
 
         &.about-text {
           font-size: 1.6em;
-          color: $snes-purple-light;
           margin: auto .5em;
             @media (min-width: 640px) {
               font-size: 1.2em;
