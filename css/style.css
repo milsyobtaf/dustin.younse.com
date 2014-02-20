@@ -497,10 +497,10 @@ body {
 
 section {
   margin-bottom: 0em;
-  padding: 0.1em .5em .5em;
+  padding: .1em .5em .5em;
 }
 section h1 {
-  margin: 0.5em 0;
+  margin: .5em 0;
 }
 @media (min-width: 740px) {
   section#education, section#experience, section#skills {
@@ -529,16 +529,13 @@ header {
 header .page-heading {
   font-family: "league-gothic";
   font-style: italic;
-  font-size: 5em;
-  line-height: 1em;
+  font-size: 6em;
+  line-height: .9em;
+  text-transform: uppercase;
   margin: .1em;
+  margin-left: 0;
   color: #595aa7;
   text-shadow: 3px 3px 0 #b6bade;
-}
-@media (min-width: 640px) {
-  header .page-heading {
-    text-transform: uppercase;
-  }
 }
 header .page-sub-heading {
   font-family: "franklin-gothic-urw";

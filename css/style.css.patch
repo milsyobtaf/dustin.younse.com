@@ -64,7 +64,7 @@ Index: css/style.css
  }
  header .page-heading {
    font-family: "league-gothic";
-@@ -559,8 +572,9 @@
+@@ -556,8 +569,9 @@
    background: #636061;
    color: #c8cbe6;
    border-top: 0.5em solid #474886;
@@ -74,7 +74,7 @@ Index: css/style.css
  }
  footer .about {
    text-align: center;
-@@ -606,12 +620,14 @@
+@@ -603,12 +617,14 @@
    color: #111111;
  }
  .resume .full-bleed-top {
