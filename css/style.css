@@ -503,13 +503,13 @@ section h1 {
   margin: .5em 0;
 }
 @media (min-width: 740px) {
-  section#education, section#experience, section#skills {
+  section.content-section {
     width: 600px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1000px) {
-  section#education, section#experience, section#skills {
+  section.content-section {
     width: 800px;
   }
 }
@@ -670,8 +670,13 @@ article.degree {
 }
 
 .degree-date {
-  float: right;
   font-weight: bold;
+  margin-left: .2em;
+}
+@media (min-width: 350px) {
+  .degree-date {
+    float: right;
+  }
 }
 
 article.job {
