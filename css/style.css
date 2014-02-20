@@ -505,9 +505,12 @@ section.full-bleed {
 
 header {
   background: #d2cbce;
-  border-bottom: 0.3em solid #474886;
+  border-bottom: 0.5em solid #474886;
   padding: .5em;
   text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
 }
 header .page-heading {
   font-family: "league-gothic";
@@ -554,8 +557,10 @@ header ul.social-links li:last-child {
 footer {
   background: #636061;
   color: #d9dbee;
-  border-top: 0.3em solid #474886;
+  border-top: 0.5em solid #474886;
   padding: 0.5em 0;
+  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
 }
 footer .about {
   text-align: center;
@@ -600,19 +605,22 @@ footer .about li.stateface:before {
   margin: 0;
 }
 
-.resume > section h1 {
-  color: #595aa7;
-}
-
 .resume .full-bleed {
   background: #b6bade;
-  border-top: 0.2em solid #474886;
-  border-bottom: 0.2em solid #474886;
 }
 .resume .full-bleed h1 {
   color: #111111;
 }
-
+.resume .full-bleed-top {
+  border-bottom: 0.2em solid #474886;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+}
+.resume .full-bleed-bottom {
+  border-top: 0.2em solid #474886;
+  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+}
 .resume #experience hr {
   background: #474886;
   width: 70%;

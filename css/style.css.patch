@@ -54,3 +54,38 @@ Index: css/style.css
    background: #fefeca;
    color: #111111;
    text-shadow: none;
+@@ -496,8 +508,9 @@
+   border-bottom: 0.5em solid #474886;
+   padding: .5em;
+   text-align: center;
+   position: relative;
++  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+ }
+ header .page-heading {
+   font-family: "league-gothic";
+@@ -545,8 +558,9 @@
+   background: #636061;
+   color: #d9dbee;
+   border-top: 0.5em solid #474886;
+   padding: 0.5em 0;
++  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+ }
+ footer .about {
+   text-align: center;
+@@ -598,12 +612,14 @@
+   color: #111111;
+ }
+ .resume .full-bleed-top {
+   border-bottom: 0.2em solid #474886;
++  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+ }
+ .resume .full-bleed-bottom {
+   border-top: 0.2em solid #474886;
++  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+ }
+ .resume #experience hr {
+   background: #474886;
