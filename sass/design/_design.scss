@@ -142,12 +142,22 @@ footer {
   #skills {
   }
   #experience {
-      hr {
-        background: darken($snes-purple-dark, 10%);
-        width: 70%;
-        height: 2px;
-        border: 0;
+    hr {
+      background: darken($snes-purple-dark, 10%);
+      width: 70%;
+      height: 2px;
+      border: 0;
+    }
+    @media (min-width: 740px) {
+      .job-details {
+        position: relative;
       }
+      .job-duration {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
   }
 }
 .school-name,
