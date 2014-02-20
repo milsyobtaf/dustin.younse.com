@@ -449,6 +449,20 @@ a:active {
   width: 1px;
 }
 
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
 @font-face {
   font-family: 'StateFaceRegular';
   src: url("../fonts/stateface-regular-webfont.eot");
