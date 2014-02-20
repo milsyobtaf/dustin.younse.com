@@ -567,7 +567,7 @@ footer .about {
   padding: 1em 0;
   margin: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   footer .about {
     padding: 3em 0;
   }
@@ -575,24 +575,19 @@ footer .about {
 footer .about li {
   padding: .3em;
 }
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   footer .about li {
     display: inline;
     padding-bottom: 0;
   }
 }
 footer .about li.about-text {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin: auto .5em;
 }
 @media (min-width: 640px) {
   footer .about li.about-text {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 700px) {
-  footer .about li.about-text {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
 }
 footer .about li.stateface {
@@ -678,7 +673,7 @@ article.job ul li,
 }
 
 body {
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
