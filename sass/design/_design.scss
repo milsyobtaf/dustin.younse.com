@@ -6,9 +6,9 @@ body {
 
 section {
   margin-bottom: 0em;
-  padding: 0.1em .5em .5em;
+  padding: .1em .5em .5em;
     h1 {
-      margin: 0.5em 0;
+      margin: .5em 0;
     }
     &#education,
     &#experience,
@@ -37,12 +37,11 @@ header {
     .page-heading {
       font-family: "league-gothic";
       font-style: italic;
-      font-size: 5em;
-        @media (min-width: 640px) {
-          text-transform: uppercase;
-        }
-      line-height: 1em;
+      font-size: 6em;
+      line-height: .9em;
+      text-transform: uppercase;
       margin: .1em;
+      margin-left: 0;
       color: $snes-purple-dark;
       text-shadow: 3px 3px 0 $snes-purple-light;
     }
