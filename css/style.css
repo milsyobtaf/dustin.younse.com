@@ -434,228 +434,82 @@ a:active {
   text-shadow: none;
 }
 
-.clean-links {
+.clean-links, header ul.social-links li a {
   text-decoration: none;
 }
-.clean-links:hover, .clean-links:focus {
+.clean-links:hover, header ul.social-links li a:hover, .clean-links:focus, header ul.social-links li a:focus {
   text-decoration: underline;
 }
 
-@-o-viewport {
-  width: device-width;
-}
-@-ms-viewport {
-  width: device-width;
-}
-@viewport {
-  width: device-width;
-}
-html {
-  overflow-y: auto;
+.visually-hidden, .stateface-replace, header ul.social-links li span {
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
 }
 
-img,
-audio,
-video,
-canvas {
-  max-width: 100%;
+@font-face {
+  font-family: 'StateFaceRegular';
+  src: url("../fonts/stateface-regular-webfont.eot");
+  src: url("../fonts/stateface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/stateface-regular-webfont.woff") format("woff"), url("../fonts/stateface-regular-webfont.ttf") format("truetype"), url("../fonts/stateface-regular-webfont.svg#StateFaceRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.stateface:before {
+  font-family: StateFaceRegular;
+  margin-right: 5px;
 }
 
-.container {
-  max-width: 1280px;
-  width: 92%;
-  margin: 0 auto;
-  position: relative;
-}
-.container .row {
-  clear: both;
+.stateface-replace:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 98%;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5,
-  .grid-6,
-  .grid-7,
-  .grid-8,
-  .grid-9,
-  .grid-10,
-  .grid-11,
-  .grid-12,
-  .grid-half,
-  .grid-full,
-  .grid-unit {
-    float: left;
-    width: 96.9697%;
-    margin: 0 1.51515% 1em;
-  }
-
-  .gallery .grid-unit,
-  .grid-half {
-    width: 46.9697%;
-    margin: 0 1.51515% 1em;
-  }
-
-  .grid-flow-opposite {
-    float: right;
-  }
-}
-@media screen and (min-width: 640px) {
-  .cols-6 .grid-1 {
-    width: 13.63636%;
-  }
-  .cols-6 .grid-2 {
-    width: 30.30303%;
-  }
-  .cols-6 .grid-3,
-  .cols-6 .grid-half {
-    width: 46.9697%;
-  }
-  .cols-6 .grid-4 {
-    width: 63.63636%;
-  }
-  .cols-6 .grid-5 {
-    width: 80.30303%;
-  }
-  .cols-6 .grid-6,
-  .cols-6 .grid-full {
-    width: 96.9697%;
-  }
-  .cols-6 .gallery .grid-unit {
-    width: 30.30303%;
-  }
-
-  .cols-12 .grid-1 {
-    width: 5.30303%;
-    font-size: 0.8em;
-  }
-  .cols-12 .grid-2 {
-    width: 13.63636%;
-  }
-  .cols-12 .grid-3 {
-    width: 21.9697%;
-  }
-  .cols-12 .grid-4 {
-    width: 30.30303%;
-  }
-  .cols-12 .grid-5 {
-    width: 38.63636%;
-  }
-  .cols-12 .grid-6,
-  .cols-12 .grid-half {
-    width: 46.9697%;
-  }
-  .cols-12 .grid-7 {
-    width: 55.30303%;
-  }
-  .cols-12 .grid-8 {
-    width: 63.63636%;
-  }
-  .cols-12 .grid-9 {
-    width: 71.9697%;
-  }
-  .cols-12 .grid-10 {
-    width: 80.30303%;
-  }
-  .cols-12 .grid-11 {
-    width: 88.63636%;
-  }
-  .cols-12 .grid-12,
-  .cols-12 .grid-full {
-    width: 96.9697%;
-  }
-  .cols-12 .gallery .grid-unit {
-    width: 30.30303%;
-  }
-}
-.content-pad-right {
-  padding-right: 4%;
+.stateface-ma:before {
+  content: "S";
 }
 
-.content-pad-left {
-  padding-left: 4%;
-}
-
-.cf:before,
-.cf:after {
-  content: "";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  zoom: 1;
+.stateface-tx:before {
+  content: "q";
 }
 
 body {
-  font: 100% / 1.5 sans-serif;
+  background: #d2cbce;
+  color: #111111;
 }
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  padding: 0.1em .5em .5em;
+}
+section h1 {
+  margin: 0.5em 0 0.3em;
+}
+@media (min-width: 740px) {
+  section#education, section#experience, section#skills {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  section#education, section#experience, section#skills {
+    width: 800px;
+  }
+}
+section.full-bleed {
+  padding: 0;
 }
 
-footer {
-  font-size: 0.9em;
-  border-top: 1px solid #cccccc;
-  padding: 0.5em 0 2.5em;
-}
-
-.heading {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-.sub-heading {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-}
-
-a {
-  color: #0066cc;
-}
-
-a:focus,
-a:hover {
-  color: #003399;
-}
-
-figure {
-  margin: 0;
-  background: #f8f8f8;
-}
-
-figcaption {
-  padding: 0.5em 1em 1em;
-  font-size: 0.875em;
-}
-
-code {
-  padding: 0.5em;
-  background: #efefef;
-}
-
-.show-grid div[class*='grid-'] {
-  background-color: #eeeeee;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  padding: 0.5em 1em;
-  margin-bottom: 1em;
+header {
+  background: #d2cbce;
+  border-bottom: 0.3em solid #474886;
+  padding: .5em;
   text-align: center;
 }
-
-h1.page-heading {
+header .page-heading {
   font-family: "league-gothic";
   font-style: italic;
   font-size: 5em;
@@ -664,70 +518,118 @@ h1.page-heading {
   color: #595aa7;
   text-shadow: 3px 3px 0 #b6bade;
 }
-@media screen and (min-width: 640px) {
-  h1.page-heading {
+@media (min-width: 640px) {
+  header .page-heading {
     text-transform: uppercase;
   }
 }
-
-h2.page-sub-heading {
+header .page-sub-heading {
   font-family: "franklin-gothic-urw";
   font-size: 1.2em;
   padding: 0 .5em;
-  margin: .1em .1em 1em;
+  margin: .1em .1em .5em;
 }
-
-body {
-  background: #d2cbce;
-  color: #111111;
-  border-top: 7px solid #474886;
+@media (min-width: 600px) {
+  header .page-sub-heading {
+    width: 500px;
+    margin: .1em auto .5em;
+  }
 }
-
-section {
-  margin-bottom: 0em;
+header ul.social-links {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
-
-.resume > section {
-  padding: 0.1em 1em 1em;
+header ul.social-links li {
+  list-style: none;
+  display: inline;
 }
-.resume > section h1 {
-  margin: 0.5em 0 0.3em;
-  color: #595aa7;
+header ul.social-links li:first-child {
+  margin-right: .5em;
 }
-
-.resume #education,
-.resume #skills {
-  background: #b6bade;
-  border-top: 2px solid #474886;
-  border-bottom: 2px solid #474886;
-}
-.resume #education h1,
-.resume #skills h1 {
-  color: #111111;
-}
-
-.resume #skills {
-  border-bottom: none;
-}
-
-.school-name {
-  font-weight: bold;
-}
-
-article.degree {
+header ul.social-links li:last-child {
   margin-left: .5em;
 }
 
-.degree-name {
+footer {
+  background: #636061;
+  color: #d9dbee;
+  border-top: 0.3em solid #474886;
+  padding: 0.5em 0;
+}
+footer .about {
+  text-align: center;
+  padding: 1em 0;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  footer .about {
+    padding: 3em 0;
+  }
+}
+footer .about li {
+  padding: .3em;
+}
+@media (min-width: 640px) {
+  footer .about li {
+    display: inline;
+    padding-bottom: 0;
+  }
+}
+footer .about li.about-text {
+  font-size: 1.6em;
+  color: #b6bade;
+  margin: auto .5em;
+}
+@media (min-width: 640px) {
+  footer .about li.about-text {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 700px) {
+  footer .about li.about-text {
+    font-size: 1.4em;
+  }
+}
+footer .about li.stateface {
+  font-size: 4em;
+  text-shadow: 3px 3px 0 #595aa7;
+  vertical-align: middle;
+}
+footer .about li.stateface:before {
+  margin: 0;
+}
+
+.resume > section h1 {
+  color: #595aa7;
+}
+
+.resume .full-bleed {
+  background: #b6bade;
+  border-top: 0.2em solid #474886;
+  border-bottom: 0.2em solid #474886;
+}
+.resume .full-bleed h1 {
+  color: #111111;
+}
+
+.resume #experience hr {
+  background: #474886;
+  width: 70%;
+  height: 2px;
+  border: 0;
+}
+
+.school-name,
+.degree-name,
+.job-title,
+.job-duration {
   font-weight: bold;
 }
 
-.degree-field {
-  margin-left: .2em;
-}
-
-.degree-date {
-  float: right;
+.job-department,
+.job-company {
+  font-style: italic;
 }
 
 .degree-detail {
@@ -736,11 +638,36 @@ article.degree {
   margin-left: .5em;
 }
 
-#experience hr {
-  background: #474886;
-  width: 70%;
-  height: 2px;
-  border: 0;
+article.degree {
+  margin-left: .5em;
+}
+
+.degree-field {
+  margin-left: .2em;
+}
+
+.degree-date {
+  float: right;
+  font-weight: bold;
+}
+
+article.job {
+  margin: 0 .5em;
+}
+article.job span {
+  display: block;
+}
+
+article.job ul,
+#skills ul {
+  margin: 0;
+  padding-left: 1em;
+  list-style: none;
+}
+article.job ul li,
+#skills ul li {
+  line-height: 1.4em;
+  padding-bottom: .5em;
 }
 
 body {
