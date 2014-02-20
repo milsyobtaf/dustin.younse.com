@@ -93,24 +93,21 @@ footer {
       text-align: center;
       padding: 1em 0;
       margin: 0;
-        @media (min-width: 640px) {
+        @media (min-width: 680px) {
           padding: 3em 0;
         }
       li {
         padding: .3em;
-          @media (min-width: 640px) {
+          @media (min-width: 680px) {
             display: inline;
             padding-bottom: 0;
           }
 
         &.about-text {
-          font-size: 1.6em;
+          font-size: 1.4em;
           margin: auto .5em;
             @media (min-width: 640px) {
-              font-size: 1.2em;
-            }
-            @media (min-width: 700px) {
-              font-size: 1.4em;
+              font-size: 1.1em;
             }
         }
         &.stateface {
