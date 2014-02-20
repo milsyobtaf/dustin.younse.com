@@ -477,7 +477,7 @@ a:active {
 }
 
 body {
-  background: #d2cbce;
+  background: #cfcfcf;
   color: #111111;
 }
 
@@ -504,7 +504,7 @@ section.full-bleed {
 }
 
 header {
-  background: #d2cbce;
+  background: #cfcfcf;
   border-bottom: 0.5em solid #474886;
   padding: .5em;
   text-align: center;
@@ -556,7 +556,7 @@ header ul.social-links li:last-child {
 
 footer {
   background: #636061;
-  color: #d9dbee;
+  color: #c8cbe6;
   border-top: 0.5em solid #474886;
   padding: 0.5em 0;
   -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
@@ -583,7 +583,6 @@ footer .about li {
 }
 footer .about li.about-text {
   font-size: 1.6em;
-  color: #b6bade;
   margin: auto .5em;
 }
 @media (min-width: 640px) {
