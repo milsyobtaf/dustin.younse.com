@@ -104,13 +104,19 @@ module.exports = function (grunt) {
 
         // Run: `grunt watch` from command line for this section to take effect
         watch : {
-            options : {
-              livereload: true
+            sass: {
+                files: ['sass/**/*.scss'],
+                tasks: ['sass:dev', 'autoprefixer']
+              },
+                css: {
+                files: ['*.css']
             },
-            scripts: {
-              files: ['sass/**/*.scss', '*.html'],
-              tasks: ['sass:dev', 'autoprefixer']
-            },
+            livereload: {
+                files: ['css/*.css', '*.html'],
+                options: {
+                    livereload: true
+                }
+            }
           },
 
     });
