@@ -10,9 +10,7 @@ section {
     h1 {
       margin: .5em 0;
     }
-    &#education,
-    &#experience,
-    &#skills {
+    &.content-section {
       @media (min-width: 740px) {
         width: 600px;
         margin: 0 auto;
@@ -184,11 +182,11 @@ article.degree {
   margin-left: .2em;
 }
 .degree-date {
-  float: right;
   font-weight: bold;
-    // @media (min-width: 740px) {
-    //   margin-right: .8em;
-    // }
+  margin-left: .2em;
+    @media (min-width: 350px) {
+      float: right;
+    }
 }
 article.job {
   margin: 0 .5em;
