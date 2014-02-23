@@ -2,7 +2,7 @@ Index: css/style.css
 ===================================================================
 --- css/style.css
 +++ css/style.css
-@@ -185,8 +185,9 @@
+@@ -192,8 +192,9 @@
   * Address differences between Firefox and other browsers.
   */
  hr {
@@ -12,7 +12,7 @@ Index: css/style.css
    height: 0;
  }
  
-@@ -301,8 +302,10 @@
+@@ -308,8 +309,10 @@
   * 2. Remove excess padding in IE 8/9/10.
   */
  input[type="checkbox"],
@@ -23,7 +23,7 @@ Index: css/style.css
    /* 1 */
    padding: 0;
    /* 2 */
-@@ -392,12 +395,15 @@
+@@ -399,12 +402,15 @@
    padding: 0;
  }
  
@@ -39,7 +39,7 @@ Index: css/style.css
  }
  
  a:link {
-@@ -415,8 +421,14 @@
+@@ -422,8 +428,14 @@
  a:active {
    color: #ff851b;
  }
@@ -54,7 +54,7 @@ Index: css/style.css
    background: #fefeca;
    color: #111111;
    text-shadow: none;
-@@ -510,8 +522,9 @@
+@@ -518,8 +530,9 @@
    border-bottom: 0.5em solid #474886;
    padding: .5em;
    text-align: center;
@@ -64,7 +64,7 @@ Index: css/style.css
  }
  header .page-heading {
    font-family: "league-gothic";
-@@ -556,8 +569,9 @@
+@@ -564,8 +577,9 @@
    background: #636061;
    color: #c8cbe6;
    border-top: 0.5em solid #474886;
@@ -74,18 +74,19 @@ Index: css/style.css
  }
  footer .about {
    text-align: center;
-@@ -603,12 +617,14 @@
-   color: #111111;
+@@ -612,13 +626,15 @@
  }
- .resume .full-bleed-top {
+ 
+ .highlight-top {
    border-bottom: 0.2em solid #474886;
 +  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
  }
- .resume .full-bleed-bottom {
+ 
+ .highlight-bottom {
    border-top: 0.2em solid #474886;
 +  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
  }
+ 
  .resume #experience hr {
-   background: #474886;

@@ -166,6 +166,13 @@ img {
 }
 
 /**
+ * Keep images from breaking out of their containers
+ */
+img {
+  max-width: 100%;
+}
+
+/**
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
@@ -501,6 +508,7 @@ section {
 }
 section h1 {
   margin: .5em 0;
+  line-height: 1em;
 }
 @media (min-width: 740px) {
   section.content-section {
@@ -513,7 +521,7 @@ section h1 {
     width: 800px;
   }
 }
-section.full-bleed {
+section.highlight {
   padding: 0;
 }
 
@@ -610,22 +618,25 @@ footer .about li.stateface:before {
   margin: 0;
 }
 
-.resume .full-bleed {
+.highlight {
   background: #b6bade;
 }
-.resume .full-bleed h1 {
+.highlight h1 {
   color: #111111;
 }
-.resume .full-bleed-top {
+
+.highlight-top {
   border-bottom: 0.2em solid #474886;
   -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
 }
-.resume .full-bleed-bottom {
+
+.highlight-bottom {
   border-top: 0.2em solid #474886;
   -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
 }
+
 .resume #experience hr {
   background: #474886;
   width: 70%;
@@ -696,6 +707,10 @@ article.job ul li,
 #skills ul li {
   line-height: 1.4em;
   padding-bottom: .5em;
+}
+
+.fourohfour .content-section {
+  text-align: center;
 }
 
 body {
