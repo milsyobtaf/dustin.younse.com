@@ -182,6 +182,14 @@ img {
 }
 
 /**
+ * Keep images from breaking out of their containers
+ */
+
+ img {
+  max-width: 100%;
+ }
+
+/**
  * Correct overflow displayed oddly in IE 9.
  */
 
