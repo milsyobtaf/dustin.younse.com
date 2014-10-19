@@ -54,7 +54,7 @@ Index: css/style.css
    background: #fefeca;
    color: #111111;
    text-shadow: none;
-@@ -518,8 +530,9 @@
+@@ -532,8 +544,9 @@
    border-bottom: 0.5em solid #474886;
    padding: .5em;
    text-align: center;
@@ -63,8 +63,8 @@ Index: css/style.css
    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
  }
  header .page-heading {
-   font-family: "league-gothic";
-@@ -564,8 +577,9 @@
+   font-family: "league_gothicitalic";
+@@ -577,8 +590,9 @@
    background: #636061;
    color: #c8cbe6;
    border-top: 0.5em solid #474886;
@@ -74,7 +74,7 @@ Index: css/style.css
  }
  footer .about {
    text-align: center;
-@@ -612,13 +626,15 @@
+@@ -625,13 +639,15 @@
  }
  
  .highlight-top {
