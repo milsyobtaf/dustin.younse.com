@@ -118,11 +118,27 @@ module.exports = function (grunt) {
                 }
             }
           },
+          rsync: {
+            options: {
+              args: ["--verbose"],
+              exclude: [".git*","*.scss","node_modules", "_inspiration","package.json"],
+              recursive: true
+            },
+            prod: {
+              options: {
+                src: "./",
+                dest: "/kunden/homepages/19/d193678559/htdocs/dustin-younse-com",
+                host: "u43975994@younse.com",
+                delete: false // Careful this option could cause data loss, read the docs!
+              }
+            }
+        },
 
     });
 
     // CSS Task
     grunt.registerTask('css', ['sass:dev', 'autoprefixer']);
+    grunt.loadNpmTasks("grunt-rsync");
 
     // grunt.registerTask('css-prod', ['sass:dist', 'autoprefixer'/*, 'watch'*/]);
 
