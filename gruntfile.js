@@ -121,7 +121,7 @@ module.exports = function (grunt) {
           rsync: {
             options: {
               args: ["--verbose"],
-              exclude: [".git*","*.scss","sass","node_modules","_inspiration","package.json",".*.map","*.patch"],
+              exclude: [".git*","*.scss","sass",".sass-cache","node_modules","_inspiration","package.json","*.map","*.patch","gruntfile.js"],
               recursive: true
             },
             prod: {
