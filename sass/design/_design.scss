@@ -41,8 +41,14 @@ header {
         color: inherit;
         text-decoration: none;
       }
-      &:hover { color: $aqua; }
-      &:active  { color: $orange; }
+      &:hover {
+        color: $orange;
+        text-decoration: underline;
+      }
+      &:active  {
+        color: $orange;
+        text-decoration: underline;
+      }
     }
   }
     .page-heading {
