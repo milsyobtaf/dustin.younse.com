@@ -41,18 +41,18 @@ Index: css/style.css
  a:link {
 @@ -422,8 +428,14 @@
  a:active {
-   color: #ff851b;
+   color: #FF851B;
  }
  
 +::-moz-selection {
 +  background: #fefeca;
-+  color: #111111;
++  color: #111;
 +  text-shadow: none;
 +}
 +
  ::selection {
    background: #fefeca;
-   color: #111111;
+   color: #111;
    text-shadow: none;
 @@ -532,8 +544,9 @@
    border-bottom: 0.5em solid #474886;
