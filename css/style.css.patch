@@ -62,9 +62,9 @@ Index: css/style.css
 +  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
  }
- header .page-heading {
-   font-family: "league_gothicitalic";
-@@ -577,8 +590,9 @@
+ header h1 a {
+   color: inherit;
+@@ -591,8 +604,9 @@
    background: #636061;
    color: #c8cbe6;
    border-top: 0.5em solid #474886;
@@ -74,7 +74,7 @@ Index: css/style.css
  }
  footer .about {
    text-align: center;
-@@ -625,13 +639,15 @@
+@@ -639,13 +653,15 @@
  }
  
  .highlight-top {
