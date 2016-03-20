@@ -64,7 +64,7 @@ Index: css/style.css
  }
  header h1 a {
    color: inherit;
-@@ -591,8 +604,9 @@
+@@ -593,8 +606,9 @@
    background: #636061;
    color: #c8cbe6;
    border-top: 0.5em solid #474886;
@@ -74,7 +74,7 @@ Index: css/style.css
  }
  footer .about {
    text-align: center;
-@@ -639,13 +653,15 @@
+@@ -641,13 +655,15 @@
  }
  
  .highlight-top {

@@ -557,10 +557,12 @@ header h1 a:visited {
   text-decoration: none;
 }
 header h1 a:hover {
-  color: #7FDBFF;
+  color: #FF851B;
+  text-decoration: underline;
 }
 header h1 a:active {
   color: #FF851B;
+  text-decoration: underline;
 }
 header .page-heading {
   font-family: "league_gothicitalic";
