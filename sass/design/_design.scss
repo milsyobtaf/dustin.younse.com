@@ -1,6 +1,6 @@
 // Body
 body {
-  background: $snes-gray-25;
+  background: $snes-gray-10;
   color: $black;
 }
 
@@ -27,7 +27,7 @@ section {
 
 // Header
 header {
-  background: $snes-gray-25;
+  background: $snes-purple-lighter;
   border-bottom: .5em solid darken($snes-purple-dark, 10%);
   padding: .5em;
   text-align: center;

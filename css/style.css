@@ -414,30 +414,30 @@ a {
 }
 
 a:link {
-  color: #0074d9;
+  color: #0074D9;
 }
 
 a:visited {
-  color: #b10dc9;
+  color: #B10DC9;
 }
 
 a:hover {
-  color: #7fdbff;
+  color: #7FDBFF;
 }
 
 a:active {
-  color: #ff851b;
+  color: #FF851B;
 }
 
 ::-moz-selection {
   background: #fefeca;
-  color: #111111;
+  color: #111;
   text-shadow: none;
 }
 
 ::selection {
   background: #fefeca;
-  color: #111111;
+  color: #111;
   text-shadow: none;
 }
 
@@ -512,8 +512,8 @@ a:active {
 }
 
 body {
-  background: #cfcfcf;
-  color: #111111;
+  background: #f0f0f0;
+  color: #111;
 }
 
 section {
@@ -540,7 +540,7 @@ section.highlight {
 }
 
 header {
-  background: #cfcfcf;
+  background: #d3d2e4;
   border-bottom: 0.5em solid #474886;
   padding: .5em;
   text-align: center;
@@ -635,7 +635,7 @@ footer .about li.stateface:before {
   background: #b6bade;
 }
 .highlight h1 {
-  color: #111111;
+  color: #111;
 }
 
 .highlight-top {
@@ -732,3 +732,5 @@ body {
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
+
+/*# sourceMappingURL=style.css.map */
