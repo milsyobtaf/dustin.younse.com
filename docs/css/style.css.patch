@@ -1,0 +1,92 @@
+Index: css/style.css
+===================================================================
+--- css/style.css
++++ css/style.css
+@@ -192,8 +192,9 @@
+  * Address differences between Firefox and other browsers.
+  */
+ hr {
+   -moz-box-sizing: content-box;
++  -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
+ }
+ 
+@@ -308,8 +309,10 @@
+  * 2. Remove excess padding in IE 8/9/10.
+  */
+ input[type="checkbox"],
+ input[type="radio"] {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   /* 1 */
+   padding: 0;
+   /* 2 */
+@@ -399,12 +402,15 @@
+   padding: 0;
+ }
+ 
+ * {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ a {
++  -webkit-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+ }
+ 
+ a:link {
+@@ -422,8 +428,14 @@
+ a:active {
+   color: #FF851B;
+ }
+ 
++::-moz-selection {
++  background: #fefeca;
++  color: #111;
++  text-shadow: none;
++}
++
+ ::selection {
+   background: #fefeca;
+   color: #111;
+   text-shadow: none;
+@@ -532,8 +544,9 @@
+   border-bottom: 0.5em solid #474886;
+   padding: .5em;
+   text-align: center;
+   position: relative;
++  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+ }
+ header h1 a {
+   color: inherit;
+@@ -593,8 +606,9 @@
+   background: #636061;
+   color: #c8cbe6;
+   border-top: 0.5em solid #474886;
+   padding: 0.5em 0;
++  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+ }
+ footer .about {
+   text-align: center;
+@@ -641,13 +655,15 @@
+ }
+ 
+ .highlight-top {
+   border-bottom: 0.2em solid #474886;
++  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+ }
+ 
+ .highlight-bottom {
+   border-top: 0.2em solid #474886;
++  -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.08);
+ }
+ 
+ .resume #experience hr {
