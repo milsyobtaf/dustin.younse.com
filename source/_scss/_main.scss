@@ -1,0 +1,211 @@
+@charset "UTF-8";
+body {
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  @include container;
+}
+
+a:link,
+a:visited {
+  color: $blue;
+  text-decoration: none;
+}
+a:hover {
+  @include transition(color .5s);
+  color: darken($blue, 5%);
+  text-decoration: underline;
+}
+
+header h1 {
+  a:link,
+  a:visited {
+    color: $black;
+    text-decoration: none;
+    text-shadow: 0px 2px 3px $yellow;
+  }
+}
+
+header h3.site-tagline {
+  margin: 0;
+}
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+  body {
+    color: $black;
+    background: $black;
+/*  background: url("../images/body_bg.gif") repeat scroll left top #171717;*/
+}
+    header.site-header,
+    section.site-content,
+    article.site-content {
+      margin-bottom: 20px;
+    }
+    header.site-header,
+    footer.site-footer {
+      background: $grey;
+      border-top: 10px solid $yellow;
+    }
+    section.site-content,
+    article.site-content {
+      background: $grey;
+      border-top: 10px solid $yellow;
+    }
+    header {
+      @include bleed;
+    }
+    header.site-header {
+      @include span-columns(6,6);
+      .site-header {
+      }
+        .site-logo {
+          @include span-columns(2 omega,6);
+          text-align: right;
+          img {
+
+          }
+        }
+        .site-title {
+          @include span-columns(4,6);
+          font-size: 1em;
+            .site-title-bottom {
+              font-size: 3em;
+          }
+        }
+        .site-tagline {
+          @include span-columns(4,6);
+        }
+        .site-nav {
+          @include span-columns(4,6);
+          padding: 0;
+          li {
+            display: inline;
+          }
+        }
+    }
+    section.site-content,
+    article.site-content {
+      @include span-columns(6,6);
+    }
+    article {
+      header {
+        h2.post-title {
+        @include span-columns(4,6);
+        padding: .2em;
+        margin: 0;
+        }
+        p.post-date {
+          @include span-columns(2 omega, 6);
+          text-align: right;
+          margin: 0;
+          padding: 0.5em 0.3em 0.2em 0;
+        }
+      }
+      p.post-teaser {
+        @include span-columns(6,6);
+        margin: 0;
+        padding: 0 0.3em .5em 0.3em;
+      }
+    }
+
+    footer {
+        @include span-columns(6,6);
+
+      @include bleed;
+      .site-social {
+        padding: 0;
+        margin: .5em 0;
+        li {
+          display: inline;
+        }
+      }
+    }
+    footer.site-footer {
+      text-align: center;
+      @include span-columns(6,6);
+
+      p.copyright {
+        margin: .5em 0;
+      }
+    }
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+  body {
+
+  }
+    header.site-header {
+      @include span-columns(6,6);
+      @include bleed;
+      .site-header {
+      }
+        .site-logo {
+          @include span-columns(4,6);
+          @include pre(1);
+          @include post(1);
+          text-align: center;
+          margin-bottom: -2.5em;
+          img {
+
+          }
+        }
+        .site-title {
+          @include span-columns(6,6);
+          font-size: 1em;
+            .site-title-bottom {
+              font-size: 3em;
+          }
+        }
+        .site-tagline {
+          @include span-columns(6,6);
+        }
+        .site-social {
+          @include span-columns(6,6);
+          padding: 0;
+          li {
+            display: block;
+          }
+        .site-nav {
+          @include span-columns(6,6);
+          padding: 0;
+          li {display: block;
+          }
+        }
+        }
+    }
+    footer {
+      @include bleed;
+    }
+    footer.site-footer {
+      @include span-columns(6,6);
+
+      p.copyright {
+        @include span-columns(2,6);
+        @include pre(2);
+        @include post(2);
+      }
+    }
+
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+/*  .logo {
+    background: url(logo2x.jpg) no-repeat;
+    background-size: 212px 303px;
+  }*/
+
+}

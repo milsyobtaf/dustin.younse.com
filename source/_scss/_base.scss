@@ -1,0 +1,36 @@
+/* Grid Variables */
+$total-columns      : 6;             // a 4-column grid
+$column-width       : 7em;            // each column is 4em wide
+$gutter-width       : 1em;            // 1em gutters between columns
+$grid-padding       : $gutter-width;  // grid-padding equal to gutters
+$side-gutter-width  : 1em;
+$container-style    : fluid;
+
+/* Font Sizes */
+$relative-font-sizing : false;
+$base-font-size       : 14px;
+$base-line-height     : 20px;
+
+@import "susy";
+
+/* Color Variables */
+$black:   #171717;
+$grey:    #999999;
+$yellow:  #E7C452;
+$blue:    #075282;
+
+/* Size Variables */
+$tupperware: 10px;
+
+/* Custom Mixins */
+@mixin bleed($padding: $grid-padding, $sides: left right) {
+  @if $sides == 'all' {
+    margin: - $padding;
+    padding: $padding;
+  } @else {
+    @each $side in $sides {
+      margin-#{$side}: - $padding;
+      padding-#{$side}: $padding;
+    }
+  }
+}

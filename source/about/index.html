@@ -1,0 +1,15 @@
+---
+layout: default
+title: F's and B's
+---
+
+  <article class="site-content">
+    <header>
+      <h2>test<a href="{{ post.url }}">{{ page.title | smart }}</a></h2>
+      <p class="post-date"><time pubdate datetime="{{ post.date }}">{{ post.date | date: "%B %d %Y" }}</time></p>
+    </header>
+    <p class="post-teaser">Teaser</p>
+    <footer>
+      <p class="post-category">{{ post.category | capitalize }}</p>
+    </footer>
+  </article>

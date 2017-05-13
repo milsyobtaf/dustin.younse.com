@@ -1,63 +1,6 @@
-# Node Ignores
-lib-cov
-lcov.info
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+css/*.css
+.sass-cache/
 
-pids
-logs
-results
-build
-.grunt
-
-node_modules
-
-# Sass Ignores
-.sass-cache
-
-# Sublime Ignores
-*.sublime-workspace
-
-# OSX Ignores
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must ends with two \r.
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# File Archive Ignores
-*.7z
-*.jar
-*.rar
-*.zip
-*.gz
-*.bzip
-*.bz2
-*.xz
-*.lzma
-*.cab
-*.iso
-*.tar
-*.dmg
-*.xpi
-*.gem
-*.egg
-*.deb
-*.rpm
-*.msi
-*.msm
-*.msp
+*.sublime-project
+*.sublime-workspace
