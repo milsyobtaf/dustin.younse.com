@@ -1,1 +1,7 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+  RewriteBase /
+</IfModule>
+
 Redirect 301 / /resume
