@@ -9,35 +9,19 @@ module.exports = {
     plugin(function ({ addBase }) {
       addBase({
         '@font-face': {
-          fontFamily: 'MilligramText-Bold',
-          src: "url('webFonts/MilligramTextBold/font.woff2') format('woff2'), url('webFonts/MilligramTextBold/font.woff') format('woff')",
+          fontFamily: 'Milligram-Bold',
+          src: "url('webFonts/MilligramBold/font.woff2') format('woff2'), url('webFonts/MilligramBold/font.woff') format('woff')",
         },
       })
     }),
-      plugin(function ({ addBase }) {
-        addBase({
-          '@font-face': {
-            fontFamily: 'MilligramText-BoldItalic',
-            src: "url('webFonts/MilligramTextBoldItalic/font.woff2') format('woff2'), url('webFonts/MilligramTextBoldItalic/font.woff') format('woff')",
-          },
-        })
-      }),
-      plugin(function ({ addBase }) {
-        addBase({
-          '@font-face': {
-            fontFamily: 'Milligram-Heavy',
-            src: "url('webFonts/MilligramHeavy/font.woff2') format('woff2'), url('webFonts/MilligramHeavy/font.woff') format('woff')",
-          },
-        })
-      }),
-      plugin(function ({ addBase }) {
-        addBase({
-          '@font-face': {
-            fontFamily: 'Milligram-HeavyItalic',
-            src: "url('webFonts/MilligramHeavyItalic/font.woff2') format('woff2'), url('webFonts/MilligramHeavyItalic/font.woff') format('woff')",
-          },
-        })
-      }),
+    plugin(function ({ addBase }) {
+      addBase({
+        '@font-face': {
+          fontFamily: 'Milligram-HeavyItalic',
+          src: "url('webFonts/MilligramHeavyItalic/font.woff2') format('woff2'), url('webFonts/MilligramHeavyItalic/font.woff') format('woff')",
+        },
+      })
+    }),
   ],
   theme: {
     container: {
