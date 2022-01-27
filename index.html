@@ -1,74 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/main.bundle.css">
-  <script src="/assets/main.bundle.js" defer></script>
-  <title> | dustin.younse.com</title>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <link rel="canonical" href="/about/"/>
+  <meta http-equiv="refresh" content="0;url=/about/" />
 </head>
-
-<body class="">
-  <nav class="bg-gray-100 py-4" x-data>
-  <div class="container flex justify-between items-baseline">
-    <a class="font-mg-heavy-italic text-4xl" href="/">
-      Dustin Younse
-    </a>
-    
-    <div class="hidden md:flex items-center gap-8">
-      
-        <a
-          class=""
-          href="/about/"
-        >
-          About
-        </a>
-      
-        <a
-          class=""
-          href="/resume/"
-        >
-          Resume
-        </a>
-      
-    </div>
-    <button class="md:hidden" @click="$store.nav.toggle()">
-      <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-      </svg>
-      <svg x-show="$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </button>
-  </div>
-  
-  <nav
-    class="container mt-8 flex flex-col gap-3 md:hidden"
-    x-cloak
-    x-show="$store.nav.isOpen"
-  >
-    
-      <a
-        class=""
-        href="/about/"
-      >
-        About
-      </a>
-    
-      <a
-        class=""
-        href="/resume/"
-      >
-        Resume
-      </a>
-    
-  </nav>
-</nav>
-
-  
-    
-  
+<body>
+  <h1>Redirecting...</h1>
+  <a href="/about/">Click here if you are not redirected.<a>
+  <script>location='/about/'</script>
 </body>
-
 </html>
