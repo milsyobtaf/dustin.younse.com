@@ -3,6 +3,40 @@ html {
   @apply antialiased text-gray-800 font-sans;
 }
 
+@import url("//hello.myfonts.net/count/41c278");
+@font-face {
+  font-family: "MilligramText-Bold";
+  src: url('webFonts/MilligramTextBold/font.woff2') format('woff2'), url('webFonts/MilligramTextBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Milligram-Heavy";
+  src: url('webFonts/MilligramHeavy/font.woff2') format('woff2'), url('webFonts/MilligramHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "MilligramText-BoldItalic";
+  src: url('webFonts/MilligramTextBoldItalic/font.woff2') format('woff2'), url('webFonts/MilligramTextBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Milligram-HeavyItalic";
+  src: url('webFonts/MilligramHeavyItalic/font.woff2') format('woff2'), url('webFonts/MilligramHeavyItalic/font.woff') format('woff');
+}
+.font-mg-bold {
+  font-family: "Milligram-Bold", serif;
+}
+.font-mg-bold-italic {
+  font-family: "Milligram-BoldItalic", serif;
+}
+.font-mg-heavy {
+  font-family: "Milligram-Heavy", serif;
+}
+.font-mg-heavy-italic {
+  font-family: "Milligram-HeavyItalic", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Milligram-Bold", serif;
+}
+
 /* This allows you to hide Alpine DOM until it's ready to go. */
 [x-cloak] {
   @apply hidden;
