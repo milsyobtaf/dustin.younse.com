@@ -5,11 +5,27 @@ layout: markdown
 
 # About Me
 
-Howdy! My name is Dustin. I'm a recovering [Drupalist] currently working as a Design Technologist on the Design System at [Indeed] where we like to say - We help people get jobs!
+## Professional life
+
+Howdy! My name is Dustin. I'm a Design Technologist working on the Design System at [Indeed] where we like to say - We help people get jobs! Before finding design systems, I was a [Drupalist] working on Very Large Websites™ for media brands and universities you've definitely heard of.
 
 Before realizing HTML and CSS could pay the bills, I was an aspiring filmmaker who enjoyed the more technical aspects of audio / video editing and visual effects.
 
-After a few years in Boston, I'm back in Austin, eating all of the tacos I can get my hands on.
+## The other 128 hours of the week
+
+I'm a lifelong cyclist who has recently rediscovered riding on dirt. I've got a [dentist quality mountain bike][yeti] and a [gravel bike][niner] that isn't quite as fancy, but it still feels like I have wings on the downhills.
+
+I also have a pretty stacked [garage gym][fringesport] where my friends and I lift [heavy things][rogue] and put them back down again. Mostly powerlifting with some strongman aspirations and a dash of HIIT on the weekends to work the beach muscles.
+
+## On the road again
+
+After a few years in Boston, I'm back in Austin, eating all of the tacos I can get my hands on. One of these days, I'm going to buy some land in Vermont or New Mexico with my closest friends and enjoy a pastoral lifestyle with high speed internet.
+
+New England has the best sandwiches, but the Southwest has the best tortilla based foods.
 
 [drupalist]: https://drupal.org
 [indeed]: https://indeed.com
+[yeti]: https://yeticycles.com
+[niner]: https://ninerbikes.com
+[fringesport]: https://fringesport.com
+[rogue]: https://roguefitness.com
