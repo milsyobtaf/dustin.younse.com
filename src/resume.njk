@@ -50,7 +50,7 @@
     </section>
     <section class="presentations">
         <header><h2 class="my-4">Presentations</h2></header>
-            {% for talk in collections.talks %}
+            {% for talk in collections.talks | reverse %}
             <ul class="list-none p-0 pb-4">
                 <li class="p-0 m-0 leading-5"><a class="font-bold" href={{ talk.data.slides_url }}>{{ talk.data.title }}</a></li>
                 <li class="p-0 m-0 leading-5 italic">{{talk.data.conference}} {{talk.data.year}}</li>
