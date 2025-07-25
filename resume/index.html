@@ -1,442 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/main.bundle.css" />
-    <link rel="me" href="https://hachyderm.io/@milsyobtaf" />
-    <script src="/assets/main.bundle.js" defer></script>
-    <title>Resume | dustin.younse.com</title>
-  </head>
-  <body class="">
-    <nav class="bg-gray-100 py-4" x-data>
-      <div class="container flex justify-between items-baseline">
-        <a class="font-mg-heavy-italic text-4xl" href="/"> Dustin Younse </a>
-        <div class="hidden md:flex items-center gap-8">
-          <a class="" href="/about/"> About </a>
-          <a class="font-black" href="/resume/"> Resume </a>
-        </div>
-        <button
-          class="md:hidden"
-          @click="$store.nav.toggle()"
-          title="Toggle navigation"
-          type="button"
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Dustin Younse">
+  <link rel="stylesheet" href="/assets/_main.css">
+<script src="/assets/_main.js" defer></script>
+
+  <link rel="me" href="https://hachyderm.io/@milsyobtaf" />
+  
+  <title>Resume | dustin.younse.com</title>
+  
+</head>
+
+<body class="debug-screens">
+  <header class="bg-gray-900">
+  <nav class="bg-gray-100 py-4" x-data>
+    <div class="container flex justify-between items-baseline">
+      <a class="font-mg-heavy-italic text-4xl" href="/">Dustin Younse</a>
+      <div class="hidden md:flex items-center gap-8">
+        
+        <a
+          href="/about/"
+          class="font-medium"
         >
-          <svg
-            x-show="!$store.nav.isOpen"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-          <svg
-            x-show="$store.nav.isOpen"
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
+          About
+        </a>
+        
+        <a
+          href="/resume/"
+          class="font-black"
+        >
+          Resume
+        </a>
+        
       </div>
-      <nav
-        class="container mt-8 flex flex-col gap-3 md:hidden"
-        x-cloak
-        x-show="$store.nav.isOpen"
+      <button
+        class="md:hidden"
+        @click="$store.nav.toggle()"
+        title="Toggle navigation"
+        type="button"
       >
-        <a class="" href="/about/"> About </a>
-        <a class="font-black" href="/resume/"> Resume </a>
-      </nav>
+        <svg
+          x-show="!$store.nav.isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          x-show="$store.nav.isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <nav
+      class="container mt-8 flex flex-col gap-3 md:hidden"
+      x-cloak
+      x-show="$store.nav.isOpen"
+    >
+      
+      <a
+        href="/about/"
+        class="font-medium"
+      >
+        About
+      </a>
+      
+      <a
+        href="/resume/"
+        class="font-black"
+      >
+        Resume
+      </a>
+      
     </nav>
-    <main class="container prose py-16">
-      <h1>Resume</h1>
-      <section class="contact">
-        <header class="sr-only"><h2 class="my-4">Contact</h2></header>
-        <div class="flex justify-between">
-          <div class="">
-            <h3 class="m-0">Dustin Younse</h3>
-            <p class="m-0">Greater Boston, Massachusetts</p>
-          </div>
-          <ul class="flex-col list-none p-0">
-            <li class="p-0 m-0">
-              <a href="https://github.com/milsyobtaf">Github</a>
-            </li>
-            <li class="p-0 m-0">
-              <a href="https://www.linkedin.com/in/dustinyounse/">Linkedin</a>
-            </li>
-            <li class="p-0 m-0">
-              <a href="https://hachyderm.io/@milsyobtaf">Mastodon</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="recent_experience">
-        <header><h2 class="my-4">Recent Experience</h2></header>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">Lead Documentation Engineer</h3>
-              <h3 class="font-bold m-0">Senior Design Technologist</h3>
-              <h4 class="font-bold m-0">Indeed</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2018 - Present</span>
-              <span class="italic">Design System</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Project / engineering lead for the Design System documentation
-              website. Performed several platform changes as team needs evolved.
-              Currently this is a GatsbyJS website with a primarily MDX content
-              source, which provides self-service support for the Design System
-              to our users across all global product teams.
-            </li>
-            <li class="pl-0">
-              Hired to lead transition of the Design System from Engineering to
-              UX. Conducted global qualitative research with internal UX and
-              Engineering users to understand the pain points of the previous
-              design system and created the system architecture of our new
-              theme-aware and composable React-based Design System.
-            </li>
-            <li class="pl-0">
-              Built and launched
-              <a href="https://indeed.design">Indeed.Design</a> a marketing
-              focused design resource which was part of the company wide Super
-              Bowl LV (2021) advertising campaign. Project was launched globally
-              with zero hosting issues under a tight deadline.
-            </li>
-            <li class="pl-0">
-              Founding member of the internal Documentation Guild. Led multiple
-              advocacy campaigns to improve the quality and breadth of
-              documentation inside of Indeed. Worked with leadership to create
-              performance evaluation metrics to incentivize good documentation
-              practices. As part of a company wide focus on Inclusive
-              Terminology, worked with product and platform teams to generated
-              organization-wide impact. This impact included over 100 Closed
-              tickets as the product organization updated terminology usage in
-              code and documentation, and platform level workflows gained the
-              flexibility to use inclusive terminology.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">
-                Senior Software Engineer / Product Owner
-              </h3>
-              <h4 class="font-bold m-0">Acquia</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2016 - 2018</span>
-              <span class="italic">Enterprise Applications</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Technical product ownership for internal engineering, including
-              Kanban backlog management, story creation, and managing
-              stakeholder priorities.
-            </li>
-            <li class="pl-0">
-              Development and migration of legacy backbone internal systems that
-              provide data flows, API endpoints, dashboards and command line
-              interfaces to the production tech stack, using Drupal 7/8 and
-              Symfony, with no lost data or transactions.
-            </li>
-            <li class="pl-0">
-              Large migration projects including the upgrades of over 40
-              codebases from PHP 5.6 to 7.1, and moving 12 active website
-              codebases to a unified Docker local development environment from
-              varied Vagrant environments.
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="presentations">
-        <header><h2 class="my-4">Presentations</h2></header>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5">
-            <a
-              class="font-bold"
-              href="https://speakerdeck.com/milsyobtaf/design-systems-arent-hard"
-              >Design Systems Aren&#39;t Hard</a
-            >
-          </li>
-          <li class="p-0 m-0 leading-5 italic">OpenJS 2020</li>
-        </ul>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5">
-            <a
-              class="font-bold"
-              href="https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-6"
-              >The Digital Speakeasy: Secure and Anonymous Access to Your
-              Website</a
-            >
-          </li>
-          <li class="p-0 m-0 leading-5 italic">DrupalCon 2018</li>
-        </ul>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5">
-            <a
-              class="font-bold"
-              href="https://speakerdeck.com/milsyobtaf/opening-the-black-box-6"
-              >Becoming a Better Developer Through Debugging</a
-            >
-          </li>
-          <li class="p-0 m-0 leading-5 italic">phpWorld 2017</li>
-        </ul>
-      </section>
-      <section class="education">
-        <header><h2 class="my-4">Education</h2></header>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5 font-bold text-gray-900">
-            Master of Arts Media Studies
-          </li>
-          <li class="p-0 m-0 leading-5 italic">
-            Focus on New Media, alternative pedagogy
-          </li>
-          <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
-        </ul>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5 font-bold text-gray-900">
-            Bachelor of Science <Radio-Television-Film></Radio-Television-Film>
-          </li>
-          <li class="p-0 m-0 leading-5 italic">
-            Focus on audio and video production
-          </li>
-          <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
-        </ul>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0 leading-5 font-bold text-gray-900">
-            Bachelor of Arts Psychology
-          </li>
-          <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
-        </ul>
-      </section>
-      <section class="skills">
-        <header><h2 class="my-4">Skills</h2></header>
-        <ul class="list-none p-0 pb-4">
-          <li class="p-0 m-0">Design Systems</li>
-          <li class="p-0 m-0">Accessibility / WCAG2.x</li>
-          <li class="p-0 m-0">Mixed-discipline team management</li>
-          <li class="p-0 m-0">Advocacy & Mentorship</li>
-          <li class="p-0 m-0">Design prototyping</li>
-          <li class="p-0 m-0">Public speaking</li>
-          <li class="p-0 m-0">
-            Documentation frameworks (Gatsby.js, Docusaurus, next.js + nextra)
-          </li>
-          <li class="p-0 m-0">
-            Content management systems (Drupal, Wordpress, Gatsby.js + Decap)
-          </li>
-          <li class="p-0 m-0">CSS/HTML</li>
-          <li class="p-0 m-0">Utility CSS frameworks (Tailwind)</li>
-          <li class="p-0 m-0">Git/Github</li>
-          <li class="p-0 m-0">CI / CD pipelines (GitHub, GitLab, CircleCI, TravisCI)</li>
-          <li class="p-0 m-0">Storybook</li>
-          <li class="p-0 m-0">Agile Methodologies</li>
-          <li class="p-0 m-0">User Research</li>
-        </ul>
-      </section>
-      <section class="previous_experience">
-        <header><h2 class="my-4">Previous Experience</h2></header>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">Senior Support Engineer</h3>
-              <h4 class="font-bold m-0">Four Kitchens</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2014 - 2016</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Responsible for ongoing maintenance and new feature development
-              for a dozen production client websites, as well as the supervision
-              and mentorship of junior engineer staff and support contractors.
-            </li>
-            <li class="pl-0">
-              Front and backend work including responsive theming, custom
-              WYSIWYG elements, custom modules.
-            </li>
-            <li class="pl-0">
-              Responsible for streamlining and maintaining the development and
-              deployment workflows across mixed hosting platforms (Pantheon,
-              Acquia, Black Mesh, Heroku, bare metal) and site build
-              methodologies.
-            </li>
-            <li class="pl-0">
-              Responsible for a wide variety of technology, including Drupal
-              6/7/8, bespoke node.js applications, SaaS front-end frameworks,
-              and Solr search instances.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">Webmaster</h3>
-              <h4 class="font-bold m-0">University of Texas Libraries</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2012 - 2014</span>
-              <span class="italic">Technology Integration Services</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Lead developer for all public facing library websites. Responsible
-              for maintaining the flagship Drupal website, a 20 site Wordpress
-              installation, and dozens of HTML websites averaging 1,000,000+
-              combined monthly views.
-            </li>
-            <li class="pl-0">
-              Successfully migrated the flagship library website to Drupal 7
-              while guiding the adoption of critical technologies and standards,
-              including responsive design patterns and a GitHub development and
-              deployment workflow.
-            </li>
-            <li class="pl-0">
-              Prototype development of physically interactive library elements
-              including digital signage, a study space availability system and
-              an arcade-style Tetris console using a custom control interface.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">Media Coordinator</h3>
-              <h4 class="font-bold m-0">UT Austin</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2011 - 2012</span>
-              <span class="italic"
-                >Institute for Public School Initiatives</span
-              >
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Technical development of online coursework for K-12 students and
-              teacher professional development using the Epsilen LMS, Adobe
-              Captivate and HTML5 / Javascript based interactive elements.
-            </li>
-            <li class="pl-0">
-              Responsible for the visual consistency in our products through
-              Adobe Photoshop master compositions and CSS styling, now deployed
-              in schools across Texas.
-            </li>
-            <li class="pl-0">
-              Recorded and edited video and audio elements for multimedia
-              components and launched an in-house video hosting solution
-              complete with accessibility features.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">Webmaster</h3>
-              <h4 class="font-bold m-0">UT Austin</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2009 - 2011</span>
-              <span class="italic">Texas Student Media</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Converted five student media properties to cloud hosted Drupal and
-              Wordpress websites with an in-house advertising platform and
-              in-house video hosting platform to reduce reliance on external
-              partners and increase overall revenue.Provided strategic planning
-              for the web and social media presences of the media properties to
-              the student managers of the media properties.
-            </li>
-            <li class="pl-0">
-              Supervised and trained a team of student web developers.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">
-                Microcomputer Applications Specialist
-              </h3>
-              <h4 class="font-bold m-0">UT Austin</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2007 - 2009</span>
-              <span class="italic">Dept of Germanic Studies</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Administered a broad desktop support program for the department’s
-              60 faculty and graduate students, providing assistance for
-              equipment from typewriters to smartphones to workstations.
-            </li>
-            <li class="pl-0">
-              Built and maintained the department PC / Mac computer lab,
-              including printers and copiers.
-            </li>
-            <li class="pl-0">
-              Technology procurement for the department and grant funded
-              department technical projects.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-6">
-          <div class="flex justify-between">
-            <span>
-              <h3 class="font-bold m-0">
-                Operations Manager / Training Coordinator
-              </h3>
-              <h4 class="font-bold m-0">teleNetwork Partners LLP</h4>
-            </span>
-            <span class="grid text-right">
-              <span class="self-start font-bold">2002 - 2007</span>
-            </span>
-          </div>
-          <hr class="my-2" />
-          <ul class="pl-0 leading-5 list-none">
-            <li class="pl-0">
-              Supervised a team of 25, including quality assurance monitoring
-              and ongoing training.
-            </li>
-            <li class="pl-0">
-              Managed the daily operations of the call center on a rotating
-              basis, supervising 200+ employees at peak hours.
-            </li>
-            <li class="pl-0">
-              Created training materials and administered training for new hires
-              and existing employees with weekly classes of 10-20 students.
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </body>
+  </nav>
+</header>
+
+  
+<main class="container py-16 prose">
+  <h1>Resume</h1>
+  <h2>Recent Experience</h2>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Senior Software Engineer</h3>
+        
+        <h3 class="font-bold text-black text-xl m-0">Product Owner</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          Acquia
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="self-end text-right font-bold text-black"
+          >2016 - 2018</span
+        >
+        <span class="self-end text-right italic leading-5"
+          >Enterprise Applications</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Technical product ownership for internal engineering, including Kanban backlog management, story creation, and managing stakeholder priorities.</li>
+      
+      <li class="pl-0">Development and migration of legacy backbone internal systems that provide data flows, API endpoints, dashboards and command line interfaces to the production tech stack, using Drupal 7/8 and Symfony, with no lost data or transactions.</li>
+      
+      <li class="pl-0">Large migration projects including the upgrades of over 40 codebases from PHP 5.6 to 7.1, and moving 12 active website codebases to a unified Docker local development environment from varied Vagrant environments.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Senior Support Engineer</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          Four Kitchens
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="self-end text-right font-bold text-black"
+          >2014 - 2016</span
+        >
+        <span class="self-end text-right italic leading-5"
+          ></span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Lead support engineer, responsible for ongoing maintenance and new feature development for a dozen production client websites, as well as the supervision and mentorship of junior engineer staff and support contractors.</li>
+      
+      <li class="pl-0">Front and backend work including responsive theming, custom WYSIWYG elements, custom modules.</li>
+      
+      <li class="pl-0">Streamlined and maintained the development and deployment workflows across mixed hosting platforms (Pantheon, Acquia, Black Mesh, Heroku, bare metal) and site build methodologies.</li>
+      
+      <li class="pl-0">Responsible for a wide variety of technology, including Drupal 6/7/8, bespoke node.js applications, SaaS front-end frameworks, and Solr search instances.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Lead Engineer, Documentation</h3>
+        
+        <h3 class="font-bold text-black text-xl m-0">Senior Design Technologist</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          Indeed
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="self-end text-right font-bold text-black"
+          >2018 - 2025</span
+        >
+        <span class="self-end text-right italic leading-5"
+          >Design System</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Project / engineering lead for the Design System documentation website. Performed several platform changes as team needs evolved. Currently this is a GatsbyJS website with a primarily MDX content source, which provides self-service support for the Design System to our users across all global product teams.</li>
+      
+      <li class="pl-0">Hired to lead transition of the Design System from Engineering to UX. Conducted global qualitative research with internal UX and Engineering users to understand the pain points of the previous design system and created the system architecture of our new theme-aware and composable React-based Design System.</li>
+      
+      <li class="pl-0">Built and launched [Indeed.Design](https://indeed.design/) a marketing focused design resource which was part of the company wide Super Bowl LV (2021) advertising campaign. Project was launched globally with zero hosting issues under a tight deadline.</li>
+      
+      <li class="pl-0">Founding member of the internal Documentation Guild. Led multiple advocacy campaigns to improve the quality and breadth of documentation inside of Indeed. Worked with leadership to create performance evaluation metrics to incentivize good documentation practices. As part of a company wide focus on Inclusive Terminology, worked with product and platform teams to generated organization-wide impact. This impact included over 100 Closed tickets as the product organization updated terminology usage in code and documentation, and platform level workflows gained the flexibility to use inclusive terminology.</li>
+      
+    </ul>
+  </div>
+  
+  <h2>Skills</h2>
+  
+  <ul class="list-none p-0 not-prose layout-masonry">
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Design Systems</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Accessibility / WCAG2.x</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">CI / CD pipelines (GitHub, GitLab, CircleCI, TravisCI)</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">CI / CD optimization</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Mixed-discipline team management</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Advocacy &amp; Mentorship</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Design prototyping</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Public speaking</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Documentation frameworks (Gatsby.js, Docusaurus, 11ty, next.js + nextra)</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Content management systems (Drupal, Wordpress, Gatsby.js + Decap)</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">CSS/HTML</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Utility CSS frameworks (Tailwind)</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Git/Github</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Storybook</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">Agile Methodologies</li>
+    
+    <li class="p-0 m-0 mb-5 leading-tight">User Research</li>
+    
+  </ul>
+  
+  <h2>Speaking</h2>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      <a class="underline" href="https://speakerdeck.com/milsyobtaf/design-systems-arent-hard">Design Systems Aren&#39;t Hard</a>
+    </li>
+    <li class="p-0 m-0 leading-5 italic">OpenJS 2020</li>
+  </ul>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      <a class="underline" href="https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-6">The Digital Speakeasy: Secure and Anonymous Access to Your Website</a>
+    </li>
+    <li class="p-0 m-0 leading-5 italic">DrupalCon 2018</li>
+  </ul>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      <a class="underline" href="https://speakerdeck.com/milsyobtaf/opening-the-black-box-6">Becoming a Better Developer Through Debugging</a>
+    </li>
+    <li class="p-0 m-0 leading-5 italic">phpWorld 2017</li>
+  </ul>
+  
+  <h2>Education</h2>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      Master of Arts, Radio-Television-Film
+    </li>
+    <li class="p-0 m-0 leading-5 italic">
+      Focus on New media, experiential pedagogy 
+    </li>
+    <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
+  </ul>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      Bachelor of Science, Radio-Television-Film
+    </li>
+    <li class="p-0 m-0 leading-5 italic">
+      Focus on audio and video production 
+    </li>
+    <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
+  </ul>
+  
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      Bachelor of Arts, Psychology
+    </li>
+    <li class="p-0 m-0 leading-5 italic">
+      
+    </li>
+    <li class="p-0 m-0 leading-5">University of Texas at Austin</li>
+  </ul>
+  
+  <h2>Previous Experience</h2>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Operations Manager</h3>
+        
+        <h3 class="font-bold text-black text-xl m-0">Training Coordinator</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          teleNetwork Partners LLP
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >2002 - 2007</span
+        >
+        <span class="italic self-end text-right leading-5"
+          ></span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Supervised a team of 25, including quality assurance monitoring and ongoing training.</li>
+      
+      <li class="pl-0">Managed the daily operations of the call center on a rotating basis, supervising 200+ employees at peak hours.</li>
+      
+      <li class="pl-0">Created training materials and administered training for new hires and existing employees with weekly classes of 10-20 students.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Microcomputer Applications Specialist</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          University of Texas
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >2007 - 2009</span
+        >
+        <span class="italic self-end text-right leading-5"
+          >Dept of Germanic Studies</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Converted five student media properties to cloud hosted Drupal and Wordpress websites with an in-house advertising platform and in-house video hosting platform to reduce reliance on external partners and increase overall revenue.Provided strategic planning for the web and social media presences of the media properties to the student managers of the media properties.</li>
+      
+      <li class="pl-0">Supervised and trained a team of student web developers.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Media Coordinator</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          University of Texas
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >2011 - 2012</span
+        >
+        <span class="italic self-end text-right leading-5"
+          >Institute for Public School Initiatives</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Technical development of online coursework for K-12 students and teacher professional development using the Epsilen LMS, Adobe Captivate and HTML5 / Javascript based interactive elements.</li>
+      
+      <li class="pl-0">Responsible for the visual consistency in our products through Adobe Photoshop master compositions and CSS styling, now deployed in schools across Texas.</li>
+      
+      <li class="pl-0">Recorded and edited video and audio elements for multimedia components and launched an in-house video hosting solution complete with accessibility features.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Webmaster</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          University of Texas Libraries
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >2012 - 2014</span
+        >
+        <span class="italic self-end text-right leading-5"
+          >Technology Integration Services</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Lead developer for all public facing library websites. Responsible for maintaining the flagship Drupal website, a 20 site Wordpress installation, and dozens of HTML websites averaging 1,000,000+ combined monthly views.</li>
+      
+      <li class="pl-0">Successfully migrated the flagship library website to Drupal 7 while guiding the adoption of critical technologies and standards, including responsive design patterns and a GitHub development and deployment workflow.</li>
+      
+      <li class="pl-0">Prototype development of physically interactive library elements including digital signage, a study space availability system and an arcade-style Tetris console using a custom control interface.</li>
+      
+    </ul>
+  </div>
+  
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        
+        <h3 class="font-bold text-black text-xl m-0">Webmaster</h3>
+        
+        <h4 class="font-bold text-l m-0 leading-5">
+          University of Texas
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >2009 - 2011</span
+        >
+        <span class="italic self-end text-right leading-5"
+          >Texas Student Media</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      
+      <li class="pl-0">Converted five student media properties to cloud hosted Drupal and Wordpress websites with an in-house advertising platform and in-house video hosting platform to reduce reliance on external partners and increase overall revenue.Provided strategic planning for the web and social media presences of the media properties to the student managers of the media properties.</li>
+      
+      <li class="pl-0">Supervised and trained a team of student web developers.</li>
+      
+    </ul>
+  </div>
+  
+</main>
+
+  <section class="text-center py-6 bg-gray-100">
+  <h2 class="text-3xl font-bold">Get in touch</h2>
+  <p
+    class="text-muted-foreground-light mb-8 mx-auto max-w-lg"
+  >
+    
+  </p>
+  <div class="flex justify-center gap-8">
+    
+    <a
+      aria-label="GitHub"
+      href="https://github.com/milsyobtaf"
+      rel="me"
+      target="_blank"
+      class="inline-flex w-12 h-8 justify-center links-center ml-2 rounded-full highlight text-muted-foreground-light hover:opacity-80 transition-opacity"
+    >
+       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg"><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> 
+    </a>
+    
+    <a
+      aria-label="LinkedIn"
+      href="https://linkedin.com/in/dustinyounse"
+      rel="me"
+      target="_blank"
+      class="inline-flex w-12 h-8 justify-center links-center ml-2 rounded-full highlight text-muted-foreground-light hover:opacity-80 transition-opacity"
+    >
+       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon-linkedin" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg"><path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg> 
+    </a>
+    
+    <a
+      aria-label="Mastodon"
+      href="https://hachyderm.io/@milsyobtaf"
+      rel="me"
+      target="_blank"
+      class="inline-flex w-12 h-8 justify-center links-center ml-2 rounded-full highlight text-muted-foreground-light hover:opacity-80 transition-opacity"
+    >
+       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon-mastodon" height="1.2em" width="1.2em" xmlns="http://www.w3.org/2000/svg"><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zM357.9 304.3l-46.6 0 0-114.2c0-49.7-64-51.6-64 6.9l0 62.5-46.3 0 0-62.5c0-58.5-64-56.6-64-6.9l0 114.2-46.7 0c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175l0 0z"/></svg> 
+    </a>
+    
+  </div>
+</section>
+<footer class="text-center text-sm text-muted-foreground-light bg-gray-100 mx-4">
+  <p>&copy; 2025 Dustin Younse. All rights reserved.</p>
+  <p></p>
+</footer>
+
+</body>
+
 </html>
