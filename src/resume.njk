@@ -1,0 +1,99 @@
+---
+title: Resume
+---
+
+{% extends 'layout.njk' %} {% block body %}
+<main class="container py-16 prose">
+  <h1>Resume</h1>
+  <h2>Recent Experience</h2>
+  {% for experience in collections.recent_experience %}
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        {% for job_title in experience.data.job_title %}
+        <h3 class="font-bold text-black text-xl m-0">{{ job_title }}</h3>
+        {% endfor %}
+        <h4 class="font-bold text-l m-0 leading-5">
+          {{ experience.data.company }}
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="self-end text-right font-bold text-black"
+          >{{ experience.data.start_date }} - {{ experience.data.end_date
+          }}</span
+        >
+        <span class="self-end text-right italic leading-5"
+          >{{ experience.data.team_name }}</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      {% for bullet_point in experience.data.bullet_points %}
+      <li class="pl-0">{{ bullet_point }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+  <h2>Skills</h2>
+  {% for skills in collections.skills %}
+  <ul class="list-none p-0 not-prose layout-masonry">
+    {% for skill in skills.data.skills %}
+    <li class="p-0 m-0 mb-5 leading-tight">{{ skill }}</li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+  <h2>Speaking</h2>
+  {% for talk in speaking %}
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      <a class="underline" href="{{ talk.url }}">{{ talk.title }}</a>
+    </li>
+    <li class="p-0 m-0 leading-5 italic">{{ talk.event }}</li>
+  </ul>
+  {% endfor %}
+  <h2>Education</h2>
+  {% for education in collections.education | reverse %}
+  <ul class="list-none not-prose p-0 pb-4">
+    <li class="p-0 m-0 leading-5 font-bold text-gray-900">
+      {{ education.data.degree }}
+    </li>
+    <li class="p-0 m-0 leading-5 italic">
+      {% if education.data.focus %}Focus on {{ education.data.focus }} {% endif
+      %}
+    </li>
+    <li class="p-0 m-0 leading-5">{{ education.data.school }}</li>
+  </ul>
+  {% endfor %}
+  <h2>Previous Experience</h2>
+  {% for experience in collections.prior_experience %}
+  <div class="mb-8">
+    <div class="flex flex-row justify-between align-baseline">
+      <span class="not-prose">
+        {% for job_title in experience.data.job_title %}
+        <h3 class="font-bold text-black text-xl m-0">{{ job_title }}</h3>
+        {% endfor %}
+        <h4 class="font-bold text-l m-0 leading-5">
+          {{ experience.data.company }}
+        </h4>
+      </span>
+      <span class="flex flex-col">
+        <span class="font-bold self-end text-right text-black"
+          >{{ experience.data.start_date }} - {{ experience.data.end_date
+          }}</span
+        >
+        <span class="italic self-end text-right leading-5"
+          >{{ experience.data.team_name }}</span
+        >
+      </span>
+    </div>
+    <hr class="not-prose my-2" />
+    <ul class="pl-0 leading-5 list-none">
+      {% for bullet_point in experience.data.bullet_points %}
+      <li class="pl-0">{{ bullet_point }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</main>
+{% endblock %}
