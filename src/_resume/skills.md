@@ -1,0 +1,22 @@
+---
+tags:
+  - resume
+  - skills
+skills:
+  - Design Systems
+  - Accessibility / WCAG2.x
+  - CI / CD pipelines (GitHub, GitLab, CircleCI, TravisCI)
+  - CI / CD optimization
+  - Mixed-discipline team management
+  - Advocacy & Mentorship
+  - Design prototyping
+  - Public speaking
+  - Documentation frameworks (Gatsby.js, Docusaurus, 11ty, next.js + nextra)
+  - Content management systems (Drupal, Wordpress, Gatsby.js + Decap)
+  - CSS/HTML
+  - Utility CSS frameworks (Tailwind)
+  - Git/Github
+  - Storybook
+  - Agile Methodologies
+  - User Research
+---
