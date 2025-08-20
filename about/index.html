@@ -1,88 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/main.bundle.css" />
+    <link rel="me" href="https://hachyderm.io/@milsyobtaf" />
+    <script src="/assets/main.bundle.js" defer></script>
+    <title>About | dustin.younse.com</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/main.bundle.css">
-  <link rel="me" href="https://hachyderm.io/@milsyobtaf">
-  <script src="/assets/main.bundle.js" defer></script>
-  <title>About | dustin.younse.com</title>
-</head>
+  <body class="">
+    <nav class="bg-gray-100 py-4" x-data>
+      <div class="container flex justify-between items-baseline">
+        <a class="font-mg-heavy-italic text-4xl" href="/"> Dustin Younse </a>
 
-<body class="">
-  <nav class="bg-gray-100 py-4" x-data>
-  <div class="container flex justify-between items-baseline">
-    <a class="font-mg-heavy-italic text-4xl" href="/">
-      Dustin Younse
-    </a>
-    
-    <div class="hidden md:flex items-center gap-8">
-      
+        <div class="hidden md:flex items-center gap-8">
+          <a class="font-black" href="/about/"> About </a>
+
+          <a class="" href="/resume/"> Resume </a>
+        </div>
+        <button class="md:hidden" @click="$store.nav.toggle()" title="Toggle navigation" type="button">
+          <svg
+            x-show="!$store.nav.isOpen"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <svg
+            x-show="$store.nav.isOpen"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <nav
+        class="container mt-8 flex flex-col gap-3 md:hidden"
+        x-cloak
+        x-show="$store.nav.isOpen"
+      >
+        <a class="font-black" href="/about/"> About </a>
+
+        <a class="" href="/resume/"> Resume </a>
+      </nav>
+    </nav>
+
+    <div class="container prose py-16">
+      <h1>About Me</h1>
+      <h2>Professional life</h2>
+      <p>
+        Howdy! My name is Dustin. I'm a Senior Design Technologist and Lead
+        Documentation Engineer working on the Design System at
+        <a href="https://indeed.com">Indeed</a> where we like to say - We help
+        people get jobs! Prior to moving into design systems full time, I was a
+        <a href="https://drupal.org">Drupalist</a> working on Very Large
+        Websites™ for media brands and universities you've definitely heard of.
+        Drupalists were using design systems before they were cool - we just
+        called them <a href="https://styletil.es">Style Tiles</a>.
+      </p>
+      <p>
+        Before realizing HTML and CSS could pay the bills, I was an aspiring
+        filmmaker who enjoyed the more technical aspects of audio / video
+        editing and visual effects. I was lucky enough to work with amazingly
+        talented folks like the
+        <a href="https://duplassbrothers.com">Duplass Brothers</a>, and had a
+        truly great time building suspense with music and gore on small budget
+        horror films.
+      </p>
+      <h2>The other 128 hours of the week</h2>
+      <p>
+        I'm a lifelong cyclist who has recently rediscovered riding on dirt.
+        I've got a
+        <a href="https://yeticycles.com">dentist quality mountain bike</a> and a
+        <a href="https://ninerbikes.com">gravel bike</a> that isn't quite as
+        fancy, but they both make me feel like I have wings.
+      </p>
+      <p>
+        I used to have a pretty stacked
+        <a href="https://fringesport.com">garage gym</a> where my friends and I
+        lifted <a href="https://roguefitness.com">heavy things</a> and put them
+        back down again. Mostly powerlifting with some strongman aspirations and
+        a dash of HIIT on the weekends to work the beach muscles. After moving
+        back to the Boston area, I look forward to rebuilding the iron paradise.
+      </p>
+      <p>
+        I like to tinker with
+        <a href="https://adafruit.com">Arduino adjacent</a> electronics and
+        <a href="https://prusa3d.com">3d printers</a>. When public gatherings
+        were more common, I helped run
+        <a href="https://dorkbot.org">dorkbot Austin</a> for several years and
+        had a part in getting
         <a
-          class="font-black"
-          href="/about/"
+          href="https://hackaday.com/2015/03/17/sxsw-create-atx-hackerspace-area/"
+          >SXSW Create</a
         >
-          About
-        </a>
-      
-        <a
-          class=""
-          href="/resume/"
-        >
-          Resume
-        </a>
-      
+        off the ground.
+      </p>
+      <h2>On the road again</h2>
+      <p>
+        I've gone back and forth a few times, but now I'm back in Boston, for
+        good. I'll always miss my home state of Texas, and eating all of the
+        tacos I can get my hands on. New England is home now, and I'm eating all
+        of the seafood and meatball subs I can get my hands on. One of these
+        days, I'm going to buy some land in Vermont or New Mexico with my
+        closest friends and enjoy a pastoral lifestyle with high speed internet.
+      </p>
+      <p>
+        New England has the best sandwiches, but the Southwest has the best
+        tortilla based foods.
+      </p>
     </div>
-    <button class="md:hidden" @click="$store.nav.toggle()">
-      <svg x-show="!$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-      </svg>
-      <svg x-show="$store.nav.isOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg>
-    </button>
-  </div>
-  
-  <nav
-    class="container mt-8 flex flex-col gap-3 md:hidden"
-    x-cloak
-    x-show="$store.nav.isOpen"
-  >
-    
-      <a
-        class="font-black"
-        href="/about/"
-      >
-        About
-      </a>
-    
-      <a
-        class=""
-        href="/resume/"
-      >
-        Resume
-      </a>
-    
-  </nav>
-</nav>
-
-  
-  <div class="container prose py-16">
-    <h1>About Me</h1>
-<h2>Professional life</h2>
-<p>Howdy! My name is Dustin. I'm a Design Technologist working on the Design System at <a href="https://indeed.com">Indeed</a> where we like to say - We help people get jobs! Before finding design systems, I was a <a href="https://drupal.org">Drupalist</a> working on Very Large Websites™ for media brands and universities you've definitely heard of.</p>
-<p>Before realizing HTML and CSS could pay the bills, I was an aspiring filmmaker who enjoyed the more technical aspects of audio / video editing and visual effects.</p>
-<h2>The other 128 hours of the week</h2>
-<p>I'm a lifelong cyclist who has recently rediscovered riding on dirt. I've got a <a href="https://yeticycles.com">dentist quality mountain bike</a> and a <a href="https://ninerbikes.com">gravel bike</a> that isn't quite as fancy, but it still feels like I have wings on the downhills.</p>
-<p>I also have a pretty stacked <a href="https://fringesport.com">garage gym</a> where my friends and I lift <a href="https://roguefitness.com">heavy things</a> and put them back down again. Mostly powerlifting with some strongman aspirations and a dash of HIIT on the weekends to work the beach muscles.</p>
-<p>I like to tinker with <a href="https://adafruit.com">Arduino adjacent</a> electronics and <a href="https://prusa3d.com">3d printers</a>. When public gatherings were more common, I helped run <a href="https://dorkbot.org">dorkbot Austin</a> for several years and had a part in getting <a href="https://hackaday.com/2015/03/17/sxsw-create-atx-hackerspace-area/">SXSW Create</a> off the ground.</p>
-<h2>On the road again</h2>
-<p>After a few years in Boston, I'm back in Austin, eating all of the tacos I can get my hands on. One of these days, I'm going to buy some land in Vermont or New Mexico with my closest friends and enjoy a pastoral lifestyle with high speed internet.</p>
-<p>New England has the best sandwiches, but the Southwest has the best tortilla based foods.</p>
-
-  </div>
-
-</body>
-
+  </body>
 </html>
