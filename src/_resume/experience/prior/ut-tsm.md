@@ -1,4 +1,5 @@
 ---
+order: 3
 company: University of Texas
 job_title:
   - Webmaster

@@ -1,4 +1,5 @@
 ---
+order: 2
 company: University of Texas
 job_title:
   - Media Coordinator

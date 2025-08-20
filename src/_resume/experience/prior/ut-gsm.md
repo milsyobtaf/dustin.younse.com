@@ -1,4 +1,5 @@
 ---
+order: 4
 company: University of Texas
 job_title:
   - Microcomputer Applications Specialist

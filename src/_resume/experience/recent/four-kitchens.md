@@ -1,4 +1,5 @@
 ---
+order: 3
 company: Four Kitchens
 job_title:
   - Senior Support Engineer
