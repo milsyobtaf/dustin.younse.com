@@ -23,4 +23,4 @@ I like to tinker with [Arduino adjacent](https://adafruit.com) electronics and [
 
 I've gone back and forth a few times, but now I'm back in Boston, for good. I'll always miss my home state of Texas, and eating all of the tacos I can get my hands on. New England is home now, and I'm eating all of the seafood and meatball subs I can get my hands on. One of these days, I'm going to buy some land in Vermont or New Mexico with my closest friends and enjoy a pastoral lifestyle with high speed internet.
 
-New England has the best sandwiches, but the Southwest has the best tortilla based foods.
+New England has the best bread based foods, but the Southwest has the best tortilla based foods.
