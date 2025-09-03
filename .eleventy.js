@@ -28,6 +28,9 @@ export default function (eleventyConfig) {
     let vals = [...values]
     return vals.sort((a, b) => Math.sign(a.data.order - b.data.order))
   })
+  eleventyConfig.addFilter("countEntries", function (entries) {
+    return Object.keys(entries).length
+  })
   return {
     dir: {
       input: "src",

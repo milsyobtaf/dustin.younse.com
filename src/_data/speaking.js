@@ -265,7 +265,7 @@ export default [
     title: "Yet Another Hours Module",
     url: "https://speakerdeck.com/milsyobtaf/yet-another-hours-module",
     talk: "hours-module",
-    type: "academic",
+    type: "professional",
     event: "UT Austin Drupal Users Group",
     year: 2014,
     featured: false,
@@ -291,7 +291,7 @@ export default [
   {
     title: "Pardon My Paranoia: Personal Privacy and the Economics of Startups",
     url: "https://speakerdeck.com/milsyobtaf/pardon-my-paranoia-personal-privacy-and-the-economics-of-startups",
-    talk: "",
+    talk: "pardon-paranoia",
     type: "academic",
     event: "University of Incarnate Word Convergent Media",
     year: 2012,

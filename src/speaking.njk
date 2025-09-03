@@ -17,25 +17,38 @@ talk_years:
 {% block body %}
   <main class="container py-16 prose">
     <h1>{{ title }}</h1>
-    {% for year in talk_years %}
-      <ul class="speaking-engagement list-none not-prose p-0 pb-4">
-        <h3>{{ year }}</h3>
-        {% for talk in speaking %}
-          {% if talk.year == year %}
-            <ul class="list-none not-prose p-0 pb-4">
-              <li class="p-0 m-0 leading-5 font-bold text-gray-900">
-                <a class="underline" href="{{ talk.url }}">{{ talk.title }}</a>
-              </li>
-              <li class="p-0 m-0 leading-5 italic">
-                {{ talk.event }} {{ talk.year }}
-              </li>
+    <h2>My favorite form of sharing knowledge 📚</h2>
+    <p>
+      I've been lucky enough to be a part of numerous tech communities that have
+      sharing knowledge as a core value. From my start in academia, as a student
+      and a practitioner, my years working in Drupal and Wordpress, and now my
+      time working in the Design System space, there have been many
+      opportunities to share what I've learned.
+    </p>
+    <p>
+      Below is a collection of my now {{ speaking | countEntries }} speaking
+      opportunities. I've seen the northern lights in Reykjavik, spoken at the
+      United Nations in NYC, and checked off 3 of the 8 Ivy League schools plus
+      MIT. I've slowed down a bit as national conferences and local camps
+      reconsider the newly decentralized world of remote work, but I'm always
+      looking for the change to share what I know. Feel free to reach out!
+    </p>
+    {% for talk_info in talksInfo %}
+      <h3>{{ talk_info.full_title }}</h3>
+      <p>{{ talk_info.description }}</p>
+      {% for talk in speaking %}
+        {% if talk.talk == talk_info.uid %}
+          <ul class="speaking-engagement list-none not-prose p-0 pb-4">
+            <li class="p-0 m-0 leading-5">
+              <span class="font-bold">{{ talk.year }}</span>: {{ talk.event }}
               {% if talk.type == "academic" %}
-                <li class="p-0 m-0 leading-5">Academic Talk</li>
+                <span class="p-0 m-0 leading-5">(Academic Talk)</span>
               {% endif %}
-            </ul>
-          {% endif %}
-        {% endfor %}
-      </ul>
+              – <a class="underline" href="{{ talk.url }}">Slides</a>
+            </li>
+          </ul>
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </main>
 {% endblock %}
