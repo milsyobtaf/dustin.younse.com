@@ -1,5 +1,14 @@
 export default [
   {
+    title: "Documentation in Design Systems (panel discussion)",
+    url: "https://infa.ai/events/documentation_20250807",
+    talk: "craft-across-ds-documentation",
+    type: "professional",
+    event: "Craft Across",
+    year: 2025,
+    featured: false,
+  },
+  {
     title: "Design Systems Aren't Hard",
     url: "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard-a5a1f88d-e8fe-46de-861c-40cf9e12be47",
     talk: "design-systems-arent-hard",

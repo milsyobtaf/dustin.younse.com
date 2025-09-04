@@ -1,5 +1,11 @@
 export default [
   {
+    uid: "craft-across-ds-documentation",
+    full_title: "Craft Across: Documentation in Design Systems",
+    description:
+      "This was a panel discussion with the Craft Across speaking series, looking at design system documentation and nascent AI integrations.",
+  },
+  {
     uid: "design-systems-arent-hard",
     full_title:
       "Design Systems Aren't Hard. But they are complex. And also hard.",
