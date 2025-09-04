@@ -44,7 +44,16 @@ talk_years:
               {% if talk.type == "academic" %}
                 <span class="p-0 m-0 leading-5">(Academic Talk)</span>
               {% endif %}
-              – <a class="underline" href="{{ talk.url }}">Slides</a>
+              {% if talk.url_slides or talk.url_info %}
+                -
+              {% endif %}
+              {% if talk.url_slides %}
+                <a class="underline" href="{{ talk.url_slides }}">Slides</a>
+              {% endif %}
+              {{ '<span class="-mx-px">,</span>' | safe if talk.url_slides and talk.url_info }}
+              {% if talk.url_info %}
+                <a class="underline" href="{{ talk.url_info }}">Details</a>
+              {% endif %}
             </li>
           </ul>
         {% endif %}

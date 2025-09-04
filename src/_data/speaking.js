@@ -1,7 +1,8 @@
 export default [
   {
     title: "Documentation in Design Systems (panel discussion)",
-    url: "https://infa.ai/events/documentation_20250807",
+    url_info: "https://infa.ai/events/documentation_20250807",
+    url_slides: "https://infa.ai/events/documentation_20250807",
     talk: "craft-across-ds-documentation",
     type: "professional",
     event: "Craft Across",
@@ -10,7 +11,8 @@ export default [
   },
   {
     title: "Design Systems Aren't Hard",
-    url: "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard-a5a1f88d-e8fe-46de-861c-40cf9e12be47",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard-a5a1f88d-e8fe-46de-861c-40cf9e12be47",
     talk: "design-systems-arent-hard",
     type: "professional",
     event: "That Conference TX",
@@ -19,7 +21,8 @@ export default [
   },
   {
     title: "Design Systems Aren't Hard",
-    url: "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard-df49e240-1ce5-44ea-a9c2-8cb30f7bac16",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard-df49e240-1ce5-44ea-a9c2-8cb30f7bac16",
     talk: "design-systems-arent-hard",
     type: "professional",
     event: "WebOps by Pantheon",
@@ -28,7 +31,7 @@ export default [
   },
   {
     title: "Design Systems Aren't Hard",
-    url: "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard",
+    url_slides: "https://speakerdeck.com/milsyobtaf/design-systems-arent-hard",
     talk: "design-systems-arent-hard",
     type: "professional",
     event: "OpenJS",
@@ -37,7 +40,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-6",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-6",
     talk: "digital-speakeasy",
     type: "professional",
     event: "DrupalCon Nashville",
@@ -47,7 +51,8 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-7fad229c-b83e-499e-bb3d-5923f80014ff",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/opening-the-black-box-7fad229c-b83e-499e-bb3d-5923f80014ff",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "NERDSummit",
@@ -57,7 +62,8 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/become-a-better-developer-with-debugging-1",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/become-a-better-developer-with-debugging-1",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "Texas Camp",
@@ -67,7 +73,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-6",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-6",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "[php]World",
@@ -76,7 +82,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-5",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-5",
     talk: "digital-speakeasy",
     type: "professional",
     event: "[php]World",
@@ -86,7 +93,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-7",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-7",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "NEDCamp",
@@ -96,7 +103,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-5",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-5",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "DrupalCamp Cornell",
@@ -106,7 +113,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-4",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-4",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "DrupalCamp Montréal",
@@ -115,7 +122,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-3",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-3",
     talk: "digital-speakeasy",
     type: "professional",
     event: "DrupalCamp Montréal",
@@ -124,7 +132,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-1",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-1",
     talk: "digital-speakeasy",
     type: "professional",
     event: "NERDSummit",
@@ -133,7 +142,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-4",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-4",
     talk: "digital-speakeasy",
     type: "professional",
     event: "Design4Drupal",
@@ -143,7 +153,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-3",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-3",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "DrupalCamp Northern Lights",
@@ -153,7 +163,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-2",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-2",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "DrupalCamp NJ",
@@ -162,7 +172,7 @@ export default [
   },
   {
     title: "Nearly Headless Drupal",
-    url: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal-1",
+    url_slides: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal-1",
     talk: "nearly-headless",
     type: "professional",
     event: "SANDCamp",
@@ -171,7 +181,8 @@ export default [
   },
   {
     title: "Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/become-a-better-developer-with-debugging-techniques-for-drupal-and-more",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/become-a-better-developer-with-debugging-techniques-for-drupal-and-more",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "SANDCamp",
@@ -181,7 +192,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-1",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box-1",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "DrupalCamp CT",
@@ -190,7 +201,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website",
     talk: "digital-speakeasy",
     type: "professional",
     event: "DrupalCamp CT",
@@ -199,7 +211,8 @@ export default [
   },
   {
     title: "The Digital Speakeasy: Secure and Anonymous Access to Your Website",
-    url: "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-2",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-digital-speakeasy-secure-and-anonymous-access-to-your-website-2",
     talk: "digital-speakeasy",
     type: "professional",
     event: "BADCamp",
@@ -208,7 +221,7 @@ export default [
   },
   {
     title: "Nearly Headless Drupal",
-    url: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal",
+    url_slides: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal",
     talk: "nearly-headless",
     type: "professional",
     event: "NYCCamp",
@@ -217,7 +230,7 @@ export default [
   },
   {
     title: "Nearly Headless Drupal",
-    url: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal-2",
+    url_slides: "https://speakerdeck.com/milsyobtaf/nearly-headless-drupal-2",
     talk: "nearly-headless",
     type: "professional",
     event: "NERDSummit",
@@ -226,7 +239,8 @@ export default [
   },
   {
     title: "DNS: What Do All These Letters Mean?!?!?!",
-    url: "https://speakerdeck.com/milsyobtaf/dns-what-do-all-these-letters-actually-mean",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/dns-what-do-all-these-letters-actually-mean",
     talk: "dns-what-do-they-mean",
     type: "professional",
     event: "NERDSummit",
@@ -236,7 +250,7 @@ export default [
   {
     title:
       "Opening the Black Box: Becoming a Better Developer Through Debugging",
-    url: "https://speakerdeck.com/milsyobtaf/opening-the-black-box",
+    url_slides: "https://speakerdeck.com/milsyobtaf/opening-the-black-box",
     talk: "blackbox-better-developer",
     type: "professional",
     event: "BADCamp",
@@ -245,7 +259,8 @@ export default [
   },
   {
     title: "The Top Ten Development Lessons They Didn't Teach You In School",
-    url: "https://speakerdeck.com/milsyobtaf/the-top-ten-development-lessons-they-didnt-teach-you-in-school",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-top-ten-development-lessons-they-didnt-teach-you-in-school",
     talk: "top-ten-lessons",
     type: "professional",
     event: "NERDSummit",
@@ -254,7 +269,8 @@ export default [
   },
   {
     title: "The Top Ten Development Lessons They Didn't Teach You In School",
-    url: "https://speakerdeck.com/milsyobtaf/the-top-ten-development-lessons-they-didnt-teach-you-in-school-1",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/the-top-ten-development-lessons-they-didnt-teach-you-in-school-1",
     talk: "top-ten-lessons",
     type: "professional",
     event: "DrupalCamp CT",
@@ -263,7 +279,8 @@ export default [
   },
   {
     title: "Days of Future Past: A Brief History of the Internet",
-    url: "https://speakerdeck.com/milsyobtaf/days-of-future-past-a-brief-history-of-the-internet",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/days-of-future-past-a-brief-history-of-the-internet",
     talk: "future-past",
     type: "academic",
     event: "University of Incarnate Word Convergent Media",
@@ -272,7 +289,7 @@ export default [
   },
   {
     title: "Yet Another Hours Module",
-    url: "https://speakerdeck.com/milsyobtaf/yet-another-hours-module",
+    url_slides: "https://speakerdeck.com/milsyobtaf/yet-another-hours-module",
     talk: "hours-module",
     type: "professional",
     event: "UT Austin Drupal Users Group",
@@ -281,7 +298,8 @@ export default [
   },
   {
     title: "Remodeling Antique Plumbing with Modern Tools",
-    url: "https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-modern-tools",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/remodeling-antique-plumbing-with-modern-tools",
     talk: "antique-plumbing",
     type: "professional",
     event: "DrupalCamp Austin",
@@ -290,7 +308,8 @@ export default [
   },
   {
     title: "A Fool Proof Three Step Path to Unlimited Viral Internet Success!!",
-    url: "https://speakerdeck.com/milsyobtaf/a-fool-proof-three-step-path-to-unlimited-viral-internet-success",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/a-fool-proof-three-step-path-to-unlimited-viral-internet-success",
     talk: "three-step-path",
     type: "academic",
     event: "University of Incarnate Word Convergent Media",
@@ -299,7 +318,8 @@ export default [
   },
   {
     title: "Pardon My Paranoia: Personal Privacy and the Economics of Startups",
-    url: "https://speakerdeck.com/milsyobtaf/pardon-my-paranoia-personal-privacy-and-the-economics-of-startups",
+    url_slides:
+      "https://speakerdeck.com/milsyobtaf/pardon-my-paranoia-personal-privacy-and-the-economics-of-startups",
     talk: "pardon-paranoia",
     type: "academic",
     event: "University of Incarnate Word Convergent Media",
