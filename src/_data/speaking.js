@@ -2,7 +2,6 @@ export default [
   {
     title: "Documentation in Design Systems (panel discussion)",
     url_info: "https://infa.ai/events/documentation_20250807",
-    url_slides: "https://infa.ai/events/documentation_20250807",
     talk: "craft-across-ds-documentation",
     type: "professional",
     event: "Craft Across",
