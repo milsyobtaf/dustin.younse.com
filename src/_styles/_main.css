@@ -1,14 +1,41 @@
-@import 'tailwindcss' source('../../src');
-@import './base.css' layer(base);
-@import './components.css' layer(components);
-@import './utilities.css' layer(utilities);
+@font-face {
+  font-family: Milligram-Bold;
+  src:
+    url("webFonts/MilligramBold/font.woff2") format("woff2"),
+    url("webFonts/MilligramBold/font.woff") format("woff");
+}
+
+.font-mg-bold {
+  font-family: Milligram-Bold, sans-serif;
+}
+
+@font-face {
+  font-family: Milligram-HeavyItalic;
+  src:
+    url("webFonts/MilligramHeavyItalic/font.woff2") format("woff2"),
+    url("webFonts/MilligramHeavyItalic/font.woff") format("woff");
+}
+
+.font-mg-heavy-italic {
+  font-family: Milligram-HeavyItalic, sans-serif;
+}
+
+@theme {
+  --font-mg-bold: "Milligram-Bold", sans-serif;
+  --font-mg-italic: "Milligram-HeavyItalic", sans-serif;
+}
+
+@import "tailwindcss" source("../../src");
+@import "./base.css" layer(base);
+@import "./components.css" layer(components);
+@import "./utilities.css" layer(utilities);
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 @utility container {
-	margin-inline: auto;
-	padding-inline: 2rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 @layer base {

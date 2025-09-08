@@ -12,26 +12,6 @@ html {
   @apply hidden;
 }
 
-@font-face {
-  font-family: Milligram-Bold;
-  src: url(webFonts/MilligramBold/font.woff2) format("woff2"),
-    url(webFonts/MilligramBold/font.woff) format("woff");
-}
-
-@font-face {
-  font-family: Milligram-HeavyItalic;
-  src: url(webFonts/MilligramHeavyItalic/font.woff2) format("woff2"),
-    url(webFonts/MilligramHeavyItalic/font.woff) format("woff");
-}
-
-.font-mg-bold {
-  font-family: Milligram-Bold, serif;
-}
-
-.font-mg-heavy-italic {
-  font-family: Milligram-HeavyItalic, serif;
-}
-
 h1,
 h2,
 h3,
@@ -39,4 +19,38 @@ h4,
 h5,
 h6 {
   font-family: Milligram-Bold, serif;
+}
+
+:root {
+  --clouds-background: linear-gradient(to right, #ece9e6, #ffffff);
+  --sunset-gradient-hdr: radial-gradient(
+    farthest-corner circle at 50% 85% in oklch,
+    oklch(95% 0.15 75) 0%,
+    oklch(70% 0.25 35) 100%
+  );
+  --chlorophyll-gradient-hdr: conic-gradient(
+    at top left in oklch,
+    oklch(75% 0.5 156) 0%,
+    oklch(70% 0.5 261) 100%
+  );
+  --rising-sun-gradient-hdr: conic-gradient(
+    at bottom left in oklab,
+    #fff 0%,
+    2%,
+    #f00 0%,
+    8%,
+    #fff 0%,
+    13%,
+    #f00 0%,
+    18%,
+    #fff 0%,
+    21%,
+    #f00 0%,
+    24%,
+    #fff 0%
+  );
+}
+body {
+  background: #ece9e6;
+  background: var(--clouds-background);
 }

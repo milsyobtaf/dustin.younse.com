@@ -1,13 +1,13 @@
-<section class="bg-gray-100 contact">
+<section class="contact">
   <header class="sr-only">
     <h2>Contact</h2>
   </header>
   <ul class="flex flex-row justify-center list-none">
     {% for item in links %}
-    <li class="px-4 m-0 font-black flex flex-column items-center gap-1">
-      {% if item.icon %} {{ item.icon | safe }} {% endif %}
-      <a href="{{ item.url }}">{{ item.name }}</a>
-    </li>
+      <li class="px-4 m-0 font-black flex flex-column items-center gap-1">
+        {% if item.icon %}{{ item.icon | safe }}{% endif %}
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      </li>
     {% endfor %}
   </ul>
 </section>

@@ -1,15 +1,15 @@
-<header class="bg-gray-900">
-  <nav class="bg-gray-100 py-4" x-data>
+<header>
+  <nav class="pt-4" x-data>
     <div class="container flex justify-between items-baseline">
       <a class="font-mg-heavy-italic text-4xl" href="/">Dustin Younse</a>
       <div class="hidden md:flex items-center gap-8">
         {% for item in navigation %}
-        <a
-          href="{{ item.route }}"
-          class="{% if page.url == item.route %}font-black{% else %}font-medium{% endif %}"
-        >
-          {{ item.name }}
-        </a>
+          <a
+            href="{{ item.route }}"
+            class="{% if page.url == item.route %}font-black{% else %}font-medium{% endif %}"
+          >
+            {{ item.name }}
+          </a>
         {% endfor %}
       </div>
       <button
@@ -20,17 +20,36 @@
       >
         <svg
           x-show="!$store.nav.isOpen"
-          xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
-          viewBox="0 0 20 20"
-          fill="currentColor"
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          data-pattern-svg=""
         >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          />
+          <defs>
+            <pattern
+              id="pattern-18"
+              patternUnits="userSpaceOnUse"
+              width="12"
+              height="12"
+            >
+              <circle
+                cx="6"
+                cy="6"
+                r="3"
+                style="stroke: currentcolor"
+                fill="none"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="22"
+            height="22"
+            data-pattern-shape=""
+            fill="url(#pattern-18)"
+          ></rect>
         </svg>
+
         <svg
           x-show="$store.nav.isOpen"
           xmlns="http://www.w3.org/2000/svg"
@@ -52,12 +71,12 @@
       x-show="$store.nav.isOpen"
     >
       {% for item in navigation %}
-      <a
-        href="{{ item.route }}"
-        class="{% if page.url == item.route %}font-black{% else %}font-medium{% endif %}"
-      >
-        {{ item.name }}
-      </a>
+        <a
+          href="{{ item.route }}"
+          class="{% if page.url == item.route %}font-black ring-teal-200{% else %}font-medium{% endif %}"
+        >
+          {{ item.name }}
+        </a>
       {% endfor %}
     </nav>
   </nav>
