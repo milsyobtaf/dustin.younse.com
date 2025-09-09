@@ -3,7 +3,8 @@ import tailwindcss from "@tailwindcss/vite"
 /** @type {import('vite').UserConfig} */
 export default {
   plugins: [tailwindcss()],
-  publicDir: false,
+  publicDir: "public",
+  clearScreen: false,
   build: {
     outDir: "./dist/assets",
     assetsDir: "",

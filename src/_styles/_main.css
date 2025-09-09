@@ -1,8 +1,9 @@
 @font-face {
   font-family: Milligram-Bold;
   src:
-    url("webFonts/MilligramBold/font.woff2") format("woff2"),
-    url("webFonts/MilligramBold/font.woff") format("woff");
+    /* local("Milligram-Bold"), */
+    url("/assets/fonts/MilligramBold/font.woff2") format("woff2"),
+    url("/assets/fonts/MilligramBold/font.woff") format("woff");
 }
 
 .font-mg-bold {
@@ -12,8 +13,9 @@
 @font-face {
   font-family: Milligram-HeavyItalic;
   src:
-    url("webFonts/MilligramHeavyItalic/font.woff2") format("woff2"),
-    url("webFonts/MilligramHeavyItalic/font.woff") format("woff");
+    /* local("Milligram-HeavyItalic"), */
+    url("/assets/fonts/MilligramHeavyItalic/font.woff2") format("woff2"),
+    url("/assets/fonts/MilligramHeavyItalic/font.woff") format("woff");
 }
 
 .font-mg-heavy-italic {
@@ -32,6 +34,9 @@
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@plugin "tailwindcss-debug-screens" {
+  prefix: "breakpoint: ";
+}
 
 @utility container {
   margin-inline: auto;
