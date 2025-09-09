@@ -53,20 +53,22 @@ header nav nav {
   background-repeat: repeat-y;
 }
 
-footer:has(a.icon-mastodon:hover) {
+footer .social-links:has(a.icon-mastodon:hover) {
   background: rgba(107, 94, 250, 0.1);
 }
 
-footer:has(a.icon-github:hover) {
+footer .social-links:has(a.icon-github:hover) {
   background: --alpha(var(--tw-prose-headings, currentColor) / 10%);
 }
 
-footer:has(a.icon-linkedin:hover) {
+footer .social-links:has(a.icon-linkedin:hover) {
   background: rgba(54, 97, 190, 0.1);
 }
 
-footer section {
-  /* background: var(--polka-dot-bg); */
+footer .social-links {
+  background: transparent;
+  transition: all 400ms ease-in-out;
+  padding-block: 0.5em;
 }
 
 hr {
