@@ -8,7 +8,12 @@
         {% for item in navigation %}
           <a
             href="{{ item.route }}"
-            class="{% if page.url == item.route %}font-black{% else %}font-medium{% endif %}"
+            class="no-underline hover:underline focus:underline
+            {% if page.url == item.route %}
+              font-black
+            {% else %}
+              font-medium
+            {% endif %}"
           >
             {{ item.name }}
           </a>
@@ -68,7 +73,7 @@
       </button>
     </div>
     <nav
-      class="container mt-8 flex flex-col gap-3 md:hidden"
+      class="container mt-8 flex flex-col gap-3 md:hidden ms-8"
       x-cloak
       x-show="$store.nav.isOpen"
     >

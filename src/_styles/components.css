@@ -45,6 +45,7 @@
   --chevron-3-col: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='pattern__svg' width='22' height='8' viewBox='0 0 22 8' data-pattern-svg=''%3E%3Cdefs%3E%3Cpattern id='pattern-40' patternUnits='userSpaceOnUse' width='8' height='8'%3E%3Cpath d='M7,-1 l2,2 M7,9 l2,-2' style='stroke: var(--pattern-channel-1, currentcolor)' fill='none' /%3E%3Cpolyline points='0,0 4,4 0,8' style='stroke: var(--pattern-channel-1, currentcolor)' fill='none' /%3E%3C/pattern%3E%3C/defs%3E%3Crect width='620' height='136' data-pattern-shape='' fill='url(%23pattern-40)'%3E%3C/rect%3E%3C/svg%3E%0A");
   --dot-4-menu: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='pattern__svg' width='22' height='36' viewBox='0 0 22 10' data-pattern-svg=''%3E%3Cdefs%3E%3Cpattern id='pattern-18' patternUnits='userSpaceOnUse' width='12' height='12'%3E%3Ccircle cx='6' cy='6' r='3' style='stroke: var(--pattern-channel-1, currentcolor)' fill='none' /%3E%3C/pattern%3E%3C/defs%3E%3Crect width='22' height='154' data-pattern-shape='' fill='url(%23pattern-18)'%3E%3C/rect%3E%3C/svg%3E%0A");
   --polka-dot-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='pattern__svg' width='12' height='12' viewBox='0 0 22 22' data-pattern-svg=''%3E%3Cdefs%3E%3Cpattern id='pattern-26' patternUnits='userSpaceOnUse' width='12' height='12'%3E%3Crect width='2' height='2' x='0' y='0' fill='currentcolor' style='fill: currentcolor' /%3E%3C/pattern%3E%3C/defs%3E%3Crect width='12' height='12' data-pattern-shape='' fill='url(%23pattern-26)'%3E%3C/rect%3E%3C/svg%3E%0A");
+  --right-diagonal-stripe-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='pattern__svg' width='6' height='6' viewBox='0 0 6 6' data-pattern-svg=''%3E%3Cdefs%3E%3Cpattern id='pattern-5' patternUnits='userSpaceOnUse' width='6' height='6'%3E%3Cpath d='M-1,1 l2,-2 M0,6 l6,-6 M5,7 l2,-2' stroke='currentcolor' style='stroke: var(--pattern-channel-1, currentcolor)' /%3E%3C/pattern%3E%3C/defs%3E%3Crect width='6' height='6' data-pattern-shape='' fill='url(%23pattern-5)'%3E%3C/rect%3E%3C/svg%3E%0A");
 }
 
 header nav nav {
@@ -65,5 +66,17 @@ footer:has(a.icon-linkedin:hover) {
 }
 
 footer section {
-  background: var(--polka-dot-bg);
+  /* background: var(--polka-dot-bg); */
+}
+
+hr {
+  border: none;
+  background: var(--right-diagonal-stripe-bg);
+  height: 0.5em;
+  margin-block: 1em;
+  &.big-hr {
+    background: var(--polka-dot-bg);
+    height: 5em;
+    margin-block: 1em;
+  }
 }
