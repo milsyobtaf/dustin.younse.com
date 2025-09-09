@@ -1,0 +1,9 @@
+Sky1: #e1f3f4
+Sky2: #dff1ee
+Sky3: #edf7f6
+Frog1: #edf7f6
+Frog2: #70443b
+Frog3: #9f8d62
+Toad1: #c87b23
+Toad2: #585d23
+Toad3: #9ba294
