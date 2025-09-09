@@ -63,6 +63,7 @@
       >
         <svg
           x-show="!$store.nav.isOpen"
+          x-collapse
           class="h-6 w-6"
           width="22"
           height="22"
@@ -92,12 +93,14 @@
             fill="url(#pattern-18)"
           ></rect>
         </svg>
-
         <svg
           x-show="$store.nav.isOpen"
+          x-collapse
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
-          viewBox="0 0 20 20"
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
           fill="currentColor"
         >
           <path
@@ -112,6 +115,7 @@
       class="container mt-8 flex flex-col gap-3 md:hidden ms-8"
       x-cloak
       x-show="$store.nav.isOpen"
+      x-collapse
     >
       
         <a
