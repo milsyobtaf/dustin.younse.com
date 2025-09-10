@@ -1,6 +1,8 @@
-# 🫖 The TEA Stack
+# 🤠 dustin.younse.com
 
-Welcome to the most minimal stack out there. This stack makes static site generation a breeze.
+Welcome to my homepage repo! This is, as always, an ever evolving website. In the past it has been a glorified resume, but I am in the process of (finally) creating the holistic personal website I always wanted.
+
+Currently this site is using [`tea-stack`](https://github.com/mattwaler/tea-stack/), a minimal website / prototyping tech stack leveraging a bunch of fun and easy to use tools:
 
 ## 🧰 Tools
 
@@ -11,24 +13,26 @@ This project uses the following frameworks:
 - [Alpine.js](https://alpinejs.dev/)
 - [Vite](https://vitejs.dev)
 
-## ⭐️ Requirements
-
-- [Node](https://nodejs.org/en/)
-- [NVM](https://github.com/nvm-sh/nvm)
-
 ## 🛠 Getting Started
 
 - `nvm use` to switch to the valid node version
-- `npm i` to build that big ol' `node_modules` folder
-- `npm run dev` to boot up a live-reloading dev server
-- `npm run build` to build your production-ready site
+- `pnpm install` to build that big ol' `node_modules` folder
+- `pnpm run dev` to boot up a live-reloading dev server
+- `pnpm run build` to build the production-ready site
 
-Feel free to peep the `package.json` file to see all available scripts and packages being utilized.
+### `pnpm`??
 
-### 🔥 Tip:
+I recently became a `pnpm` convert, after years of `npm` and `yarn`. `pnpm` is basically the same as either of those options, but it has some ergonomics I really appreciate like this explicit installation output:
 
-Running `npm run build && npx serve dist` will boot up a local server of your production site to preview before deployment.
+```sh
+💰 pnpm install -D @alpinejs/collapse
+ WARN  3 deprecated subdependencies found: glob@7.2.3, inflight@1.0.6, node-domexception@1.0.0
+Packages: +1
 
-### 👋🏻 Thank you!
+Progress: resolved 698, reused 633, downloaded 0, added 0, done
 
-I appreciate you taking time to check out the TEA stack, Please leave a star and share it if you found it useful!
+devDependencies:
++ @alpinejs/collapse 3.15.0
+
+Done in 1.2s using pnpm v10.13.1
+```
