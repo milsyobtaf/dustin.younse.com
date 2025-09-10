@@ -3,10 +3,6 @@ html {
   @apply antialiased text-gray-800 font-sans;
 }
 
-@theme {
-  --breakpoint-xs: 28em;
-}
-
 /* This allows you to hide Alpine DOM until it's ready to go. */
 [x-cloak] {
   @apply hidden;
@@ -22,6 +18,14 @@ h6 {
 }
 
 @theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 360px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
   --clouds-background: linear-gradient(to right, #ece9e6, #ffffff);
   --sunset-gradient-hdr: radial-gradient(
     farthest-corner circle at 50% 85% in oklch,
