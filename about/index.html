@@ -18,12 +18,12 @@
   </head>
 
   <body class="">
-    <header>
-  <nav class="pt-4" x-data>
-    <div class="container prose flex justify-between items-baseline">
-      <a class="font-mg-heavy-italic text-4xl no-underline" href="/"
-        >Dustin Younse</a
-      >
+    <header x-data="{ open: false }">
+  <nav class="pt-4">
+    <div class="container flex justify-between items-baseline">
+      <a class="font-mg-heavy-italic text-4xl no-underline" href="/">
+        Dustin Younse
+      </a>
       <div class="hidden md:flex items-center gap-8">
         
           <a
@@ -37,13 +37,23 @@
           </a>
         
           <a
-            href="/resume/"
+            href="/experience/"
             class="no-underline hover:underline focus:underline
             
               font-medium
             "
           >
-            Resume
+            Experience
+          </a>
+        
+          <a
+            href="/portfolio/"
+            class="no-underline hover:underline focus:underline
+            
+              font-medium
+            "
+          >
+            Portfolio
           </a>
         
           <a
@@ -59,12 +69,12 @@
       </div>
       <button
         class="md:hidden"
-        @click="$store.nav.toggle()"
+        @click="open = !open"
         title="Toggle navigation"
         type="button"
       >
         <svg
-          x-show="!$store.nav.isOpen"
+          x-show="!open"
           x-collapse
           class="h-6 w-6"
           width="22"
@@ -96,7 +106,7 @@
           ></rect>
         </svg>
         <svg
-          x-show="$store.nav.isOpen"
+          x-show="open"
           x-collapse
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
@@ -113,40 +123,54 @@
         </svg>
       </button>
     </div>
-    <nav
-      class="container mt-8 flex flex-col gap-3 md:hidden ms-8"
-      x-cloak
-      x-show="$store.nav.isOpen"
-      x-collapse
-    >
-      
-        <a
-          href="/about/"
-          class="font-black ring-teal-200"
-        >
-          About
-        </a>
-      
-        <a
-          href="/resume/"
-          class="font-medium"
-        >
-          Resume
-        </a>
-      
-        <a
-          href="/speaking/"
-          class="font-medium"
-        >
-          Speaking
-        </a>
-      
-    </nav>
   </nav>
+  <hr class="medium-hr hidden md:block mt-6" />
+  <nav
+    class="container mt-4 flex flex-col gap-3 md:hidden ms-8 collapsible-nav"
+    x-cloak
+    x-show="open"
+    x-collapse
+  >
+    
+      <a
+        href="/about/"
+        class="font-black ring-teal-200"
+      >
+        About
+      </a>
+    
+      <a
+        href="/experience/"
+        class="font-medium"
+      >
+        Experience
+      </a>
+    
+      <a
+        href="/portfolio/"
+        class="font-medium"
+      >
+        Portfolio
+      </a>
+    
+      <a
+        href="/speaking/"
+        class="font-medium"
+      >
+        Speaking
+      </a>
+    
+  </nav>
+  <hr
+    class="md:hidden mt-5"
+    x-cloak
+    x-show="!open"
+    x-transition.duration.100ms
+  />
 </header>
 
     
-  <div class="container py-12 prose"><h1>About me</h1>
+  <div class="container py-6 prose"><h1>About me</h1>
 <h2>Professional life</h2>
 <p>Howdy! My name is Dustin. I'm a Senior Design Technologist and Lead Documentation Engineer working on the Design System at <a href="https://indeed.com">Indeed</a> where we like to say - We help people get jobs! Prior to moving into design systems full time, I was a Drupalist working on Very Large Websites™ for media brands and universities you've definitely heard of. Drupalists were using design systems before they were cool - we just called them <a href="https://styletil.es">Style Tiles</a>.</p>
 <p>Before realizing HTML and CSS could pay the bills, I was an aspiring filmmaker who enjoyed the more technical aspects of audio / video editing and visual effects. I was lucky enough to work with amazingly talented folks like the <a href="https://duplassbrothers.com">Duplass Brothers</a>, and had a truly great time building suspense with music and gore on small budget horror films.</p>
@@ -159,9 +183,9 @@
 <p>New England has the best bread based foods, but the Southwest has the best tortilla based foods.</p>
 </div>
 
-    <hr class="big-hr" />
-<footer class="text-center text-muted-foreground-light mx-4">
-  <h2 class="text-3xl font-bold pt-4">Get in touch</h2>
+    <footer class="text-center text-muted-foreground-light my-4">
+  <hr class="big-hr" />
+  <h2 class="text-3xl font-bold pt-8">Get in touch</h2>
   <section class="text-center text-xl py-6">
     <div class="flex justify-center gap-8 social-links">
       
@@ -197,7 +221,7 @@
       
     </div>
   </section>
-  <section class="copyright text-center text-sm py-4">
+  <section class="copyright text-center text-sm">
     <p>&copy; 2025 Dustin Younse. All rights reserved.</p>
     <p></p>
   </section>

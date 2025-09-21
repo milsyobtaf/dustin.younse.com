@@ -13,17 +13,17 @@
     <link rel="icon" href="/favicon.ico" sizes="16x16" />
     <link rel="icon" href="/favicon.png" sizes="16x16" />
     
-      <title>Resume | dustin.younse.com</title>
+      <title>Experience | dustin.younse.com</title>
     
   </head>
 
   <body class="">
-    <header>
-  <nav class="pt-4" x-data>
-    <div class="container prose flex justify-between items-baseline">
-      <a class="font-mg-heavy-italic text-4xl no-underline" href="/"
-        >Dustin Younse</a
-      >
+    <header x-data="{ open: false }">
+  <nav class="pt-4">
+    <div class="container flex justify-between items-baseline">
+      <a class="font-mg-heavy-italic text-4xl no-underline" href="/">
+        Dustin Younse
+      </a>
       <div class="hidden md:flex items-center gap-8">
         
           <a
@@ -37,13 +37,23 @@
           </a>
         
           <a
-            href="/resume/"
+            href="/experience/"
             class="no-underline hover:underline focus:underline
             
               font-black
             "
           >
-            Resume
+            Experience
+          </a>
+        
+          <a
+            href="/portfolio/"
+            class="no-underline hover:underline focus:underline
+            
+              font-medium
+            "
+          >
+            Portfolio
           </a>
         
           <a
@@ -59,12 +69,12 @@
       </div>
       <button
         class="md:hidden"
-        @click="$store.nav.toggle()"
+        @click="open = !open"
         title="Toggle navigation"
         type="button"
       >
         <svg
-          x-show="!$store.nav.isOpen"
+          x-show="!open"
           x-collapse
           class="h-6 w-6"
           width="22"
@@ -96,7 +106,7 @@
           ></rect>
         </svg>
         <svg
-          x-show="$store.nav.isOpen"
+          x-show="open"
           x-collapse
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
@@ -113,40 +123,54 @@
         </svg>
       </button>
     </div>
-    <nav
-      class="container mt-8 flex flex-col gap-3 md:hidden ms-8"
-      x-cloak
-      x-show="$store.nav.isOpen"
-      x-collapse
-    >
-      
-        <a
-          href="/about/"
-          class="font-medium"
-        >
-          About
-        </a>
-      
-        <a
-          href="/resume/"
-          class="font-black ring-teal-200"
-        >
-          Resume
-        </a>
-      
-        <a
-          href="/speaking/"
-          class="font-medium"
-        >
-          Speaking
-        </a>
-      
-    </nav>
   </nav>
+  <hr class="medium-hr hidden md:block mt-6" />
+  <nav
+    class="container mt-4 flex flex-col gap-3 md:hidden ms-8 collapsible-nav"
+    x-cloak
+    x-show="open"
+    x-collapse
+  >
+    
+      <a
+        href="/about/"
+        class="font-medium"
+      >
+        About
+      </a>
+    
+      <a
+        href="/experience/"
+        class="font-black ring-teal-200"
+      >
+        Experience
+      </a>
+    
+      <a
+        href="/portfolio/"
+        class="font-medium"
+      >
+        Portfolio
+      </a>
+    
+      <a
+        href="/speaking/"
+        class="font-medium"
+      >
+        Speaking
+      </a>
+    
+  </nav>
+  <hr
+    class="md:hidden mt-5"
+    x-cloak
+    x-show="!open"
+    x-transition.duration.100ms
+  />
 </header>
 
     
-  <main class="container py-12 prose">
+  <main class="container py-6 prose">
     <h1>Resume</h1>
     <h2>Recent Experience</h2>
     
@@ -585,9 +609,9 @@
     
   </main>
 
-    <hr class="big-hr" />
-<footer class="text-center text-muted-foreground-light mx-4">
-  <h2 class="text-3xl font-bold pt-4">Get in touch</h2>
+    <footer class="text-center text-muted-foreground-light my-4">
+  <hr class="big-hr" />
+  <h2 class="text-3xl font-bold pt-8">Get in touch</h2>
   <section class="text-center text-xl py-6">
     <div class="flex justify-center gap-8 social-links">
       
@@ -623,7 +647,7 @@
       
     </div>
   </section>
-  <section class="copyright text-center text-sm py-4">
+  <section class="copyright text-center text-sm">
     <p>&copy; 2025 Dustin Younse. All rights reserved.</p>
     <p></p>
   </section>
