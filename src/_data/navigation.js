@@ -1,5 +1,6 @@
 export default [
   { name: "About", route: "/about/" },
-  { name: "Resume", route: "/resume/" },
+  { name: "Experience", route: "/experience/" },
+  { name: "Portfolio", route: "/portfolio/" },
   { name: "Speaking", route: "/speaking/" },
 ]

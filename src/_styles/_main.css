@@ -1,32 +1,3 @@
-@font-face {
-  font-family: Milligram-Bold;
-  src:
-    /* local("Milligram-Bold"), */
-    url("/assets/fonts/MilligramBold/font.woff2") format("woff2"),
-    url("/assets/fonts/MilligramBold/font.woff") format("woff");
-}
-
-.font-mg-bold {
-  font-family: Milligram-Bold, sans-serif;
-}
-
-@font-face {
-  font-family: Milligram-HeavyItalic;
-  src:
-    /* local("Milligram-HeavyItalic"), */
-    url("/assets/fonts/MilligramHeavyItalic/font.woff2") format("woff2"),
-    url("/assets/fonts/MilligramHeavyItalic/font.woff") format("woff");
-}
-
-.font-mg-heavy-italic {
-  font-family: Milligram-HeavyItalic, sans-serif;
-}
-
-@theme {
-  --font-mg-bold: "Milligram-Bold", sans-serif;
-  --font-mg-italic: "Milligram-HeavyItalic", sans-serif;
-}
-
 @import "tailwindcss" source("../../src");
 @import "./base.css" layer(base);
 @import "./components.css" layer(components);
@@ -41,6 +12,17 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
+}
+
+@utility prose {
+  :not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    &:where(h1) {
+      font-size: var(--text-3xl);
+    }
+    &:where(h2) {
+      margin-block-start: 1em;
+    }
+  }
 }
 
 @layer base {

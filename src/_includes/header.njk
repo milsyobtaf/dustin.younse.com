@@ -1,9 +1,9 @@
-<header>
-  <nav class="pt-4" x-data>
-    <div class="container prose flex justify-between items-baseline">
-      <a class="font-mg-heavy-italic text-4xl no-underline" href="/"
-        >Dustin Younse</a
-      >
+<header x-data="{ open: false }">
+  <nav class="pt-4">
+    <div class="container flex justify-between items-baseline">
+      <a class="font-mg-heavy-italic text-4xl no-underline" href="/">
+        Dustin Younse
+      </a>
       <div class="hidden md:flex items-center gap-8">
         {% for item in navigation %}
           <a
@@ -21,12 +21,12 @@
       </div>
       <button
         class="md:hidden"
-        @click="$store.nav.toggle()"
+        @click="open = !open"
         title="Toggle navigation"
         type="button"
       >
         <svg
-          x-show="!$store.nav.isOpen"
+          x-show="!open"
           x-collapse
           class="h-6 w-6"
           width="22"
@@ -58,7 +58,7 @@
           ></rect>
         </svg>
         <svg
-          x-show="$store.nav.isOpen"
+          x-show="open"
           x-collapse
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
@@ -75,20 +75,27 @@
         </svg>
       </button>
     </div>
-    <nav
-      class="container mt-8 flex flex-col gap-3 md:hidden ms-8"
-      x-cloak
-      x-show="$store.nav.isOpen"
-      x-collapse
-    >
-      {% for item in navigation %}
-        <a
-          href="{{ item.route }}"
-          class="{% if page.url == item.route %}font-black ring-teal-200{% else %}font-medium{% endif %}"
-        >
-          {{ item.name }}
-        </a>
-      {% endfor %}
-    </nav>
   </nav>
+  <hr class="medium-hr hidden md:block mt-6" />
+  <nav
+    class="container mt-4 flex flex-col gap-3 md:hidden ms-8 collapsible-nav"
+    x-cloak
+    x-show="open"
+    x-collapse
+  >
+    {% for item in navigation %}
+      <a
+        href="{{ item.route }}"
+        class="{% if page.url == item.route %}font-black ring-teal-200{% else %}font-medium{% endif %}"
+      >
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
+  <hr
+    class="md:hidden mt-5"
+    x-cloak
+    x-show="!open"
+    x-transition.duration.100ms
+  />
 </header>
