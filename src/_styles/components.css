@@ -14,7 +14,10 @@
   color: #6b5efa;
 }
 
-/* Accordion icons */
+/* Accordion */
+.experience-portfolio-header {
+  cursor: pointer;
+}
 
 .accordion-icon {
   background-position: center right;
@@ -31,6 +34,10 @@
 header nav.collapsible-nav {
   background: var(--chevron-3-col);
   background-repeat: repeat-y;
+}
+
+button.hamburger-menu-button {
+  cursor: pointer;
 }
 
 .container.prose a {
