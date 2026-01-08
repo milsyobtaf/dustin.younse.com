@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - primary
+  workflow_dispatch:
+    description: "Environment to build against"
+    type: environment
+    required: true
 
 jobs:
   build-lint-deploy:
