@@ -40,7 +40,7 @@ button.hamburger-menu-button {
   cursor: pointer;
 }
 
-.container.prose a {
+.container.prose a[href^="http"] {
   &::after {
     content: "";
     display: inline-block;
