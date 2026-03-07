@@ -1,0 +1,22 @@
+---
+title: Blog posts
+---
+
+{% extends 'layout.njk' %}
+{% block body %}
+  <main class="container py-6 prose">
+    <h1>{{ title }}</h1>
+    {% if collections.blogpost %}
+      <ul class="pl-0">
+        {% for post in collections.blogpost %}
+          <li class="flex justify-between pl-0 list-none">
+            <a href="{{ post.url }}">{{ post.data.title }}</a
+            ><time datetime="{{ post.date | htmlDateString }}"
+              >{{ post.date |formatDateUS }}</time
+            >
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </main>
+{% endblock %}
