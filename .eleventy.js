@@ -1,10 +1,42 @@
+import { feedPlugin } from "@11ty/eleventy-plugin-rss"
+
 export default function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ public: "./" })
+
+  eleventyConfig
+    .addPassthroughCopy({ public: "./" })
+    .addPassthroughCopy({ "src/content/feed": "./feed" })
+
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`)
   eleventyConfig.setBrowserSyncConfig({
     files: ["dist/**/*"],
     open: true,
   })
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom", // or "rss", "json"
+    outputPath: "/feed/feed.xml",
+    stylesheet: "/feed/pretty-atom-feed.xsl",
+    templateData: {
+      eleventyNavigation: {
+        key: "Feed",
+        order: 4,
+      },
+    },
+    collection: {
+      name: "blogpost",
+      limit: 10,
+    },
+    metadata: {
+      language: "en",
+      title: "A personal web-log",
+      subtitle: "Personal publishing is community minded democracy",
+      base: "https://dustin.younse.com/",
+      author: {
+        name: "Dustin Younse",
+      },
+    },
+  })
+
   eleventyConfig.addCollection("resumeEducation", function (collection) {
     return collection.getFilteredByTags("resume", "education")
   })
