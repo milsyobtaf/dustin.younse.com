@@ -1,9 +1,8 @@
 ---
 title: About me
-layout: markdown
+permalink: /about/index.html
+layout: page
 ---
-
-# About me
 
 ## Professional life
 
