@@ -43,6 +43,6 @@
     "tailwindcss": "^4.2.1",
     "tailwindcss-debug-screens": "^3.0.1",
     "twig": "^1.17.1",
-    "vite": "^6.4.1"
+    "vite": "^6.4.3"
   }
 }
